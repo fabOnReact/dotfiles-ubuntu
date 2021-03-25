@@ -15,6 +15,3 @@ nnoremap <c-f>b :wa<CR>:VtrSendCommandToRunner buildAndNotify<CR>
 
 " send ctrl+c to attached pane
 nnoremap <c-f>c :VtrSendCtrlC<CR>
-
-" aliases for reactnative
-cnoreabbrev gb GBrowse @upstream<CR>
