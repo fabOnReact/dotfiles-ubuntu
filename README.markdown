@@ -21,7 +21,7 @@ Things I tried to configure that do not work:
 
 TODO:
 
-- Use tags in autocompletion (currently used for imports)
+- Use tags in autocompletion (currently used for imports) coc-tag
 
 The basic setup was taken from [Upcase](https://thoughtbot.com/upcase/) courses on vim/tmux.
 Videos/Blog coming soon at https://fabriziobertoglio.xyz
