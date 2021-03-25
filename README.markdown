@@ -1,6 +1,7 @@
 My NeoVim setup for React Native on Ubuntu 20.4, includes:
 
 - Java/Android:
+  - [fzf.vim](https://github.com/junegunn/fzf.vim) the best vim plugin!
   - [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) syntax highlighting
   - Tags for navigating Android Sdk and many other libraries
   - FZF to search with Ripgrep, Open Files, Search Tags and History
