@@ -56,3 +56,6 @@ xmap ic <Plug>(coc-classobj-i)
 omap ic <Plug>(coc-classobj-i)
 xmap ac <Plug>(coc-classobj-a)
 omap ac <Plug>(coc-classobj-a)
+
+https://vim.fandom.com/wiki/Search_and_replace_the_word_under_the_cursor
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>/

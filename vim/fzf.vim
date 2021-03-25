@@ -13,7 +13,8 @@ nnoremap <silent><S-j> :bprevious<CR>
 verbose nnoremap <silent><S-k> :bnext<CR>
 
 " Ctags 
-nnoremap <leader>c :Tags<cr>
+" tag search for current word 
+map <leader>c :Tags <C-r><C-w><cr>
 nnoremap <leader>d :BTags<cr>
 " Windows
 " nnoremap <leader>w :Windows<cr>
