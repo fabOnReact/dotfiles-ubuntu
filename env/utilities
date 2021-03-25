@@ -1,0 +1,20 @@
+# Utilities
+export PATH=$PATH:/opt/NzbDrone
+export PATH=$PATH:/opt/Radarr
+alias r="ranger"
+alias desktop_shorcut="~/.local/share/applications/"
+# Other
+alias pbcopy="xsel --clipboard --input"
+alias pbpaste="xsel --clipboard --output"
+alias sickbeard="python ~/Documents/sickbeard/my-sickbeard-install/SickBeard.py"
+alias couchpotato="python ~/Documents/Couchpotato/CouchPotatoServer/CouchPotato.py"
+alias lss="find . -type f -printf "%s\t%p\n" | sort -n | tail -10"
+alias nvidia_configs="sh -c '/usr/bin/nvidia-settings --load-config-only'"
+alias generate_tags="ctags --tag-relative -R --sort=yes --languages=ruby,javascript --exclude=.git --exclude=log . $(bundle list --paths)"
+alias lvh='rails s -p 3000 -b lvh.me'
+# alias vim='gvim -v'
+alias vim='nvim'
+
+# Git
+unalias glg
+alias glg='git log --oneline --decorate  --max-count=5'

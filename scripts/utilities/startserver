@@ -1,0 +1,6 @@
+# start backend server
+# myip="$(hostname -I | cut -d' ' -f1)"
+myip="$(ifconfig getifaddr en1)"
+tmux send-keys 'surf' 'C-m'
+tmux send-keys "rails server -b ${myip} -p 3000" "C-m"
+tmux rename-window server

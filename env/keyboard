@@ -1,0 +1,8 @@
+# bind some keys, navigate back / forward
+# bindkey "^[OD" backward-word
+# bindkey "^[OC" forward-word
+bindkey "^[[0;3D" beginning-of-line
+bindkey "^[[1;3C" end-of-line
+
+# autosuggest ctrl+space
+bindkey '^ ' autosuggest-accept

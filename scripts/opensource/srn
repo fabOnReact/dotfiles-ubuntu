@@ -1,0 +1,39 @@
+#!/bin/sh
+# rename session
+tmux rename-session "a - reactnative"
+# open js library
+tmux new-window
+tmux rename-window "vim"
+
+# copy js settings
+# tmux send keys "echo 'y' | cp ~/.dotfiles/files/config_js.json ~/.config/nvim/coc-settings.json" 'C-m'
+
+# open react native
+tmux send-keys 'os' 'C-m'
+tmux send-keys 'cd react-native' 'C-m'
+tmux send-keys 'vim' 'C-m'
+tmux split-window -l 4
+tmux send-keys 'os' 'C-m'
+tmux send-keys 'cd react-native' 'C-m'
+tmux send-keys 'adbg &' 'C-m'
+
+# open AOSP
+# tmux new-window
+# tmux rename-window "AOSP"
+# tmux send-keys 'os' 'C-m'
+# tmux send-keys 'cd /home/fabrizio/Documents/sourcecode/opensource/platform_frameworks_base/core/java/android' 'C-m'
+
+# open server
+tmux new-window
+tmux rename-window "server"
+tmux send-keys 'os' 'C-m'
+tmux send-keys 'cd react-native' 'C-m'
+tmux send-keys 'yin' 'C-m'
+tmux send-keys 'ysr' 'C-m'
+# open bash window
+tmux split-window -l 20 
+tmux send-keys 'os' 'C-m'
+tmux send-keys 'cd react-native' 'C-m'
+
+# return to window number 1
+tmux select-window -t 1

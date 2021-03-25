@@ -1,0 +1,2 @@
+./gradlew :app:installDebug --daemon
+adb shell am start -n 'com.example.myapplication/com.example.myapplication.MainActivity' -a android.intent.action.MAIN -c android.intent.category.LAUNCHER

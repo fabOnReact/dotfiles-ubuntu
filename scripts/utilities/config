@@ -1,0 +1,4 @@
+# reset the ip
+# myip="$(hostname -I | cut -d' ' -f1)"
+myip="$(ifconfig getifaddr en1)"
+echo "export const host = 'http://${myip}:3000'" > app/config/constants.js

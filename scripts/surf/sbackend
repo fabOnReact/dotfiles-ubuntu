@@ -1,0 +1,33 @@
+#!/bin/sh
+# start backend server
+tmux rename-session "a - backend"
+myip="$(ipconfig getifaddr en4)"
+tmux new-window -n backend
+tmux send-keys 'surf' 'C-m'
+tmux send-keys 'vim' 'C-m'
+
+# open bash window
+tmux new-window -n console
+tmux send-keys 'surf' 'C-m'
+tmux send-keys 'rails c' 'C-m'
+
+# split window
+# tmux split-window -h
+# tmux send-keys 'surf' 'C-m'
+# tmux send-keys 'git s' 'C-m'
+# tmux resize-pane -D 15
+
+# server
+tmux new-window -n server
+tmux send-keys 'surf' 'C-m'
+tmux send-keys "rails server -b ${myip} -p 3000" "C-m"
+# tmux send-keys "rails s" "C-m"
+
+# sidekiq
+tmux new-window -n sidekiq
+tmux send-keys 'surf' 'C-m'
+tmux send-keys 'sidekiq' 'C-m'
+
+# vim notes
+tmux new-window -n notes
+# tmux send-keys 'vim ~/Documents/Notes/Surfcheck' 'C-m'

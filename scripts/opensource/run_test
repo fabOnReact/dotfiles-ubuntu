@@ -1,0 +1,6 @@
+#!/bin/bash
+# script to run rails test, takes the file name and test name
+# echo "bundle exec ruby -w -Itest $1_test.rb -n $2"
+# bundle exec ruby -w -Itest $1_test.rb -n $2
+echo bundle exec ruby -w -Itest test/cases/associations/inverse_associations_test.rb -n $1
+bundle exec ruby -w -Itest test/cases/associations/inverse_associations_test.rb -n $1

@@ -1,0 +1,14 @@
+## ENVIRONMENT VARIABLES
+export PATH="$PATH:$(yarn global bin)"
+
+# Other Files
+source ~/.dotfiles/env/android
+source ~/.dotfiles/env/folders
+source ~/.dotfiles/env/utilities
+source ~/.dotfiles/env/docker
+source ~/.dotfiles/env/general
+source ~/.dotfiles/env/keyboard
+source ~/.dotfiles/env/urbi
+source ~/.dotfiles/env/git
+source ~/.dotfiles/env/reactnative
+source ~/.dotfiles/env/expo

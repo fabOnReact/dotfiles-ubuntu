@@ -1,0 +1,21 @@
+#!/bin/sh
+# open vim 
+tmux rename-session "b - rails"
+tmux new-window -n association
+tmux send-keys 'association' 'C-m'
+tmux send-keys 'vim' 'C-m'
+
+# open bash window
+tmux new-window -n bash
+tmux send-keys 'association' 'C-m'
+tmux send-keys 'zsh' 'C-m'
+
+# open vim 
+tmux new-window -n relation
+tmux send-keys 'relation' 'C-m'
+tmux send-keys 'vim' 'C-m'
+
+# open bash window
+tmux new-window -n bash
+tmux send-keys 'relation' 'C-m'
+tmux send-keys 'zsh' 'C-m'

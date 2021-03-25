@@ -1,0 +1,50 @@
+# React
+export REACT_EDITOR=vim
+
+## ALIAS
+alias profile="source ~/.bash_profile"
+alias r="ranger"
+# Usenet
+alias usenet="/Applications/Sonarr.app/Contents/MacOS/Sonarr"
+# Rails
+alias surfcheck_backup="scp deploy@178.128.253.133:/home/deploy/backups/surfcheck/2019.09.10.00.00.03/surfcheck.tar /Users/fabriziobertoglio/Documents/sourcecode/rails/surfcheck/backups"
+alias hatchbox="ssh -o ServerAliveInterval=120 deploy@178.128.253.133"
+alias generate_tags="ctags --tag-relative -R --sort=yes --languages=ruby,javascript --exclude=.git --exclude=log . $(bundle list --paths)"
+alias lvh='rails s -p 3000 -b lvh.me'
+# ReactNative
+alias avds="emulator -list-avds"
+alias npmglobal="npm list -g --depth=0"
+alias surfnative="cd $CODE/ReactNative/SurfApp" 
+# Projects
+alias surfnotes="vim ~/Documents/Notes/Surfcheck"
+alias code="cd $DOCS/sourcecode"
+alias railspath="cd $CODE/rails"
+alias railssource="cd $CODE/rails/opensource/rails"
+alias native="cd $CODE/ReactNative"
+alias rnlibs="cd $CODE/ReactNative/libraries"
+alias portfolio="cd $CODE/rails/portfolio"
+alias social="cd $CODE/rails/SocialNetwork"
+alias sprachspiel="cd $CODE/rails/SpracheSpiel"
+alias surf="cd $CODE/rails/surfcheck"
+# Android
+alias android_emulator='emulator -avd Pixel_2_API_28_Google_Image'
+alias android_emulator_fast='emulator -avd Pixel_3_API_28_4GB_Ram'
+alias haxm_stop='sudo kextunload –b com.intel.kext.intelhaxm'
+alias haxm_start='sudo kextload –b com.intel.kext.intelhaxm'
+alias check_haxm='kextstat | grep intel'
+alias rnand='yarn react-native run-android'
+alias rnip8="yarn react-native run-ios --simulator='iPhone 8'"
+alias rnip11="yarn react-native run-ios --simulator='iPhone 11'"
+alias adbm="adb shell input keyevent 82"
+alias systeminfo="inxi -Fxz"
+# Other
+alias pbcopy="xsel --clipboard --input"
+alias pbpaste="xsel --clipboard --output"
+alias sickbeard="python ~/Documents/sickbeard/my-sickbeard-install/SickBeard.py"
+alias couchpotato="python ~/Documents/Couchpotato/CouchPotatoServer/CouchPotato.py"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# added by Nix installer
+# if [ -e /home/fabrizio/.nix-profile/etc/profile.d/nix.sh ]; then . /home/fabrizio/.nix-profile/etc/profile.d/nix.sh; fi 
+alias rules="/etc/udev/rules.d"

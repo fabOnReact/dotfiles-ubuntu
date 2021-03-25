@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# give a name to the session
+tmux rename-session "c - surf_android"
+
+# open vim editor
+tmux new-window -n vim
+tmux select-window -t "c - android:vim"
+tmux send-keys 'surfnative' 'C-m'
+tmux send-keys 'vim' 'C-m'
+
+# run adb server
+tmux new-window -n logcat
+tmux select-window -t android:logcat
+
+# emulator with google play services 
+tmux send-keys 'emulator -avd Pixel_2_API_28_Google_Image' 'C-m'
+
+# starting yarn server
+tmux new-window -n yarn
+tmux select-window -t "c - android:yarn"
+tmux send-keys 'surfnative' 'C-m'
+tmux send-keys 'npm start' 'C-m'
+
+# split window and run mobile app
+tmux split-window -v
+tmux send-keys 'surfnative' 'C-m'
+tmux send-keys 'ls' 'C-m'
+tmux send-keys 'ls' 'C-m'
+tmux send-keys 'ls' 'C-m'
+tmux send-keys 'ls' 'C-m'
+tmux send-keys 'react-native run-android' 'C-m'
+
+# vim notes
+tmux new-window -n notes
+tmux send-keys 'vim ~/Documents/Notes/Surfcheck' 'C-m'

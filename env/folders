@@ -1,0 +1,31 @@
+# Environment
+export DOCS=$HOME/Documents
+export CODE=$DOCS/sourcecode
+export OS=$CODE/opensource
+export scripts=~/.scripts/bin
+export RAILSPATH="$CODE/opensource/rails/"
+export GITHUB_TOKEN="78a72af35445ca3f8180b1a98e0bbd56ff1ccba1"
+export GITHUB_PR_NUMBER="28617"
+
+# Settings
+alias desktop_entries="cd /home/fabrizio/.local/share/applications"
+
+# Open Source folders
+alias aosp="cd /home/fabrizio/Documents/sourcecode/opensource/platform_frameworks_base/core/java/android"
+
+# Projects Aliases
+alias surfnative="cd $CODE/reactnative/surfnative" 
+alias surfnotes="vim ~/Documents/Notes/Surfcheck"
+alias code="cd $DOCS/sourcecode"
+alias railspath="cd $CODE/rails"
+alias os="cd $CODE/opensource"
+alias association="cd $RAILSPATH/activerecord/lib/active_record/associations"
+alias relation="cd $RAILSPATH/activerecord/lib/active_record/relation"
+alias rncamera="cd $CODE/opensource/react-native-camera"
+alias native="cd $CODE/reactnative"
+alias rnlibs="cd $CODE/reactnative/libraries"
+alias portfolio="cd $CODE/rails/portfolio"
+alias social="cd $CODE/rails/SocialNetwork"
+alias sprachspiel="cd $CODE/rails/SpracheSpiel"
+alias surf="cd $CODE/rails/surfcheck"
+alias myapp="cd $CODE/android/MyApplication"

@@ -1,0 +1,7 @@
+#!/bin/bash
+{ # try
+    yarn android && notify-send "gradle_build_completed"
+    #save your output
+} || { # catch
+    notify-send "gradle_build_failed"
+}

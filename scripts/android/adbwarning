@@ -1,0 +1,1 @@
+adb logcat "${1}:W" 'ReactNative:V' 'ReactNativeJS:V' '*:S' -v brief -D

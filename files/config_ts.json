@@ -1,0 +1,12 @@
+{
+  "eslint.packageManager": "yarn",
+  "eslint.enable": false,
+  "eslint.autoFixOnSave": true,
+  "eslint.run": "onSave",
+  "javascript.validate.enable": false,
+  "tslint.fixAllProblems": "onSave",
+  "coc.preferences.formatOnSaveFiletypes": ["react", "javascript", "typescript", "typescriptreact", "css", "markdown"],
+  "tslint.enable": false,
+  "typescript.validate.enable": false,
+  "flow.enable": false,
+}

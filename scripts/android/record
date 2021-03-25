@@ -1,0 +1,22 @@
+#!/bin/sh
+
+timestamp=`date "+%Y-%m-%d_%H%M%S"` 
+file="testcase_$timestamp.mp4"
+destination="/home/fabrizio/Desktop/$file"
+
+sleep 2s
+echo "------------------------------------"
+echo "start recording"
+echo "adb shell screenrecord --time-limit 4 /sdcard/$file"
+echo "------------------------------------"
+adb shell screenrecord --time-limit 4 /sdcard/$file
+# sleep 1s
+echo "adb pull /sdcard/$file $destination"
+adb pull /sdcard/$file $destination
+echo "------------------------------------"
+echo "stop recording"
+# sleep 1s
+echo "open recording with vlc"
+echo "vlc $destination "
+vlc $destination &
+echo "------------------------------------"

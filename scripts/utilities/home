@@ -1,0 +1,12 @@
+#!/bin/sh
+# give a name to the session
+tmux rename-session "h - home"
+
+# ~/.zshrc
+tmux new-window -n zsh
+tmux send-keys 'vim ~/.zshrc' 'C-m'
+
+# scripts
+tmux new-window -n scripts
+tmux send-keys 'cd ~/.dotfiles' 'C-m'
+tmux send-keys 'vim' 'C-m'

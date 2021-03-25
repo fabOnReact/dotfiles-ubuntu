@@ -1,0 +1,3 @@
+clear control
+keycode 135 = Super_R
+add control = Super_R Super_L
