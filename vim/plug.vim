@@ -68,6 +68,7 @@ Plug 'uiiaoo/java-syntax.vim'
 Plug 'rlue/vim-fold-rspec'
 Plug 'janko-m/vim-test'
 
+" Text Objects
 " https://github.com/tpope/vim-surround
 " https://github.com/tpope/vim-repeat
 " The . command will work with ds, cs, and yss if you install repeat.vim.
@@ -76,6 +77,9 @@ Plug 'tpope/vim-surround'
 " Plug 'justinmk/vim-sneak'
 Plug 'christoomey/vim-rfactory'
 Plug 'xolox/vim-misc'
+" https://github.com/alvan/vim-closetag
+" https://youtu.be/NnjkZYKzPds
+Plug 'alvan/vim-closetag'
 
 " Notes
 Plug 'xolox/vim-notes'
@@ -120,4 +124,5 @@ Plug 'vimlab/split-term.vim'
 Plug 'airblade/vim-rooter'
 
 " Other
+" https://youtu.be/1iuzniAe44Q
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }

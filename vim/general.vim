@@ -67,3 +67,6 @@ nnoremap <silent><S-y> 5<c-y>
 
 " https://stackoverflow.com/questions/40362460/show-cursor-in-command-line-mode
 set cursorline
+
+" use q? instead of /
+nnoremap / q?
