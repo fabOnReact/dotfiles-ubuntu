@@ -118,3 +118,6 @@ Plug 'ap/vim-buftabline'
 Plug 'vimlab/split-term.vim'
 
 Plug 'airblade/vim-rooter'
+
+" Other
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
