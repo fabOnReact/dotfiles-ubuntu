@@ -1,11 +1,13 @@
 #!/bin/bash
 # frontend
 tmux rename-session "a - frontend"
-tmux send-keys 'surfnative' 'C-m'
-tmux send-keys 'vim' 'C-m'
-
+# open js library
 tmux new-window
 tmux rename-window "vim"
+
+# open react native
+tmux send-keys 'surfnative' 'C-m'
+tmux send-keys 'vim' 'C-m'
 
 # reset the ip
 # myip="$(hostname -I | cut -d' ' -f1)"
@@ -17,6 +19,7 @@ tmux rename-window "vim"
 # open a split
 tmux split-window -l 4
 tmux send-keys 'surfnative' 'C-m'
+tmux send-keys 'yin' 'C-m'
 tmux send-keys 'yst' 'C-m'
 
 # open bash window
