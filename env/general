@@ -11,17 +11,16 @@ alias surfcheck_backup="scp deploy@178.128.253.133:/home/deploy/backups/surfchec
 alias hatchbox="ssh -o ServerAliveInterval=120 deploy@178.128.253.133"
 alias generate_tags="ctags --tag-relative -R --sort=yes --languages=ruby,javascript --exclude=.git --exclude=log . $(bundle list --paths)"
 alias lvh='rails s -p 3000 -b lvh.me'
-# ReactNative
+# reactnative
 alias avds="emulator -list-avds"
 alias npmglobal="npm list -g --depth=0"
-alias surfnative="cd $CODE/ReactNative/SurfApp" 
 # Projects
 alias surfnotes="vim ~/Documents/Notes/Surfcheck"
 alias code="cd $DOCS/sourcecode"
 alias railspath="cd $CODE/rails"
 alias railssource="cd $CODE/rails/opensource/rails"
-alias native="cd $CODE/ReactNative"
-alias rnlibs="cd $CODE/ReactNative/libraries"
+alias native="cd $CODE/reactnative"
+alias rnlibs="cd $CODE/reactnative/libraries"
 alias portfolio="cd $CODE/rails/portfolio"
 alias social="cd $CODE/rails/SocialNetwork"
 alias sprachspiel="cd $CODE/rails/SpracheSpiel"

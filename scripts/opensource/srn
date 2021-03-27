@@ -12,6 +12,8 @@ tmux rename-window "vim"
 tmux send-keys 'os' 'C-m'
 tmux send-keys 'cd react-native' 'C-m'
 tmux send-keys 'vim' 'C-m'
+
+# open a split
 tmux split-window -l 4
 tmux send-keys 'os' 'C-m'
 tmux send-keys 'cd react-native' 'C-m'

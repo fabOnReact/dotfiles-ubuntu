@@ -1,16 +1,23 @@
 #!/bin/bash
 # frontend
 tmux rename-session "a - frontend"
-tmux new-window -n vim
 tmux send-keys 'surfnative' 'C-m'
 tmux send-keys 'vim' 'C-m'
 
+tmux new-window
+tmux rename-window "vim"
+
 # reset the ip
-myip="$(hostname -I | cut -d' ' -f1)"
+# myip="$(hostname -I | cut -d' ' -f1)"
 
 # update the ip address
-echo "export const host = 'https://surfcheck.xyz/api/v1' 
-// export const host = 'http://${myip}:3000'" > /home/fabrizio/Documents/sourcecode/reactnative/surfnative/app/config/constants.js
+# echo "export const host = 'https://surfcheck.xyz/api/v1' 
+# export const host = 'http://${myip}:3000'" > /home/fabrizio/Documents/sourcecode/reactnative/surfnative/app/config/constants.js
+
+# open a split
+tmux split-window -l 4
+tmux send-keys 'surfnative' 'C-m'
+tmux send-keys 'yst' 'C-m'
 
 # open bash window
 tmux new-window -n bash
