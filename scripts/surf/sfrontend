@@ -10,11 +10,11 @@ tmux send-keys 'surfnative' 'C-m'
 tmux send-keys 'vim' 'C-m'
 
 # reset the ip
-# myip="$(hostname -I | cut -d' ' -f1)"
+myip="$(hostname -I | cut -d' ' -f1)"
 
 # update the ip address
 # echo "export const host = 'https://surfcheck.xyz/api/v1' 
-# export const host = 'http://${myip}:3000'" > /home/fabrizio/Documents/sourcecode/reactnative/surfnative/app/config/constants.js
+echo "export const host = 'http://${myip}:3000'" > /home/fabrizio/Documents/sourcecode/reactnative/surfnative/app/config/constants.js
 
 # open a split
 tmux split-window -l 4

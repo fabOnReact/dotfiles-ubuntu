@@ -20,6 +20,7 @@ tmux send-keys 'rails c' 'C-m'
 # server
 tmux new-window -n server
 tmux send-keys 'surf' 'C-m'
+myip="$(hostname -I | cut -d' ' -f1)"
 tmux send-keys "rails server -b ${myip} -p 3000" "C-m"
 # tmux send-keys "rails s" "C-m"
 
