@@ -12,9 +12,11 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:/opt/android-studio/bin
-export PATH=$PATH:/opt/buck/bin
+# export PATH=$PATH:/opt/buck/bin
+export PATH=$PATH:$HOME/Documents/sourcecode/opensource/buck/bin
 export ANDROID_SDK=$HOME/Android/Sdk
-export ANDROID_NDK=$ANDROID_SDK/ndk/17.2.4988734
+# export ANDROID_NDK=$ANDROID_SDK/ndk/17.2.4988734
+export ANDROID_NDK=/home/fabrizio/Downloads/android-ndk-r20b-linux-x86_64/android-ndk-r20b
 export REACT_EDITOR="/usr/bin/nvim"
 # alias
 alias emulator_api='emulator -avd Pixel_2_API_28_Google_Api'

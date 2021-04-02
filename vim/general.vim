@@ -69,4 +69,4 @@ nnoremap <silent><S-y> 5<c-y>
 set cursorline
 
 " use q? instead of /
-nnoremap / q?
+nnoremap / q/i

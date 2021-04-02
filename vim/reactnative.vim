@@ -11,7 +11,7 @@ nnoremap <c-f>b :wa<CR>:VtrSendCommandToRunner buildAndNotify<CR>
 " nnoremap <c-f>b :wa<CR>:VtrSendCommandToRunner yarn test -i Switch-test<CR>
 
 " run java test
-" nnoremap <c-f>b :w<CR>:VtrSendCommandToRunner btf<CR>
+" nnoremap <c-f>b :wa<CR>:VtrSendCommandToRunner btf<CR>
 
 " send ctrl+c to attached pane
 nnoremap <c-f>c :VtrSendCtrlC<CR>

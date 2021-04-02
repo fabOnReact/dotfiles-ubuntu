@@ -126,3 +126,9 @@ Plug 'airblade/vim-rooter'
 " Other
 " https://youtu.be/1iuzniAe44Q
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+" https://github.com/yuttie/comfortable-motion.vim
+" https://youtu.be/-80O8GGqNwA
+" Plug 'yuttie/comfortable-motion.vim'
+" https://github.com/easymotion/vim-easymotion
+" https://youtu.be/7X0ELN_YGtE
+Plug 'easymotion/vim-easymotion'

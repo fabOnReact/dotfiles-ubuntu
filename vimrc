@@ -43,6 +43,6 @@ source ~/.dotfiles/vim/airline.vim
 source ~/.dotfiles/vim/alias.vim
 source ~/.dotfiles/vim/folders.vim
 source ~/.dotfiles/vim/fzf.vim
+source ~/.dotfiles/vim/objc.vim
 source ~/.dotfiles/vim/reactnative.vim
 source ~/.dotfiles/vim/surfnative.vim
-source ~/.dotfiles/vim/objc.vim
