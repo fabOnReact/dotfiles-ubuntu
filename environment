@@ -11,3 +11,4 @@ source ~/.dotfiles/env/keyboard
 source ~/.dotfiles/env/git
 source ~/.dotfiles/env/reactnative
 source ~/.dotfiles/env/expo
+source ~/.dotfiles/env/comm

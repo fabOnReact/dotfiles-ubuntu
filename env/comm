@@ -1,0 +1,2 @@
+alias server=DEBUG_COLORS=true DEBUG=express:* yarn dev
+export PATH=$PATH:~/Applications/arcanist/bin

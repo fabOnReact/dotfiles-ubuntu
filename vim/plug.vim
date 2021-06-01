@@ -65,7 +65,7 @@ Plug 'keith/swift.vim'
 Plug 'uiiaoo/java-syntax.vim'
 
 " Testing
-Plug 'rlue/vim-fold-rspec'
+" Plug 'rlue/vim-fold-rspec'
 Plug 'janko-m/vim-test'
 
 " Text Objects

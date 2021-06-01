@@ -8,3 +8,7 @@ alias ybr="ybuildrn && ysa"
 alias aoff="adb shell settings put secure enabled_accessibility_services com.android.talkback/com.google.android.marvin.talkback.TalkBackService"
 alias aon="adb shell settings put secure enabled_accessibility_services com.google.android.marvin.talkback/com.google.android.marvin.talkback.TalkBackService"
 alias cocrn="echo 'y' | cp ~/.dotfiles/files/config_js.json ~/.config/nvim/coc-settings.json"
+
+# https://github.com/CommE2E/comm/blob/master/docs/dev_environment.md#nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm

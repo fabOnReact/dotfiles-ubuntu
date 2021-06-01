@@ -56,7 +56,7 @@ imap <c-x><c-l> <plug>(fzf-complete-line)
 
 " fzf#vim#gitfiles(git_options, [spec dict], [fullscreen bool])
 command! -bang -nargs=* -complete=dir GFiles
-      \ call fzf#vim#gitfiles(<q-args>, {'options': ['--delimiter', '/', '--preview', 'echo {};echo;~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
+      \ call fzf#vim#gitfiles(<q-args>, {'options': ['--delimiter', '/', '--with-nth', '-3..', '--preview', 'echo {};echo;~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
 
 " fzf#vim#buffers([spec dict], [fullscreen bool])
 command! -bang -nargs=* -complete=dir Buffers

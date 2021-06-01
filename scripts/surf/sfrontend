@@ -20,9 +20,15 @@ echo "export const host = 'http://${myip}:3000'" > /home/fabrizio/Documents/sour
 tmux split-window -l 4
 tmux send-keys 'surfnative' 'C-m'
 tmux send-keys 'yin' 'C-m'
-tmux send-keys 'yst' 'C-m'
+yarn react-native log-android | grep -P "TESTING"
 
 # open bash window
 tmux new-window -n bash
 tmux send-keys 'surfnative' 'C-m'
 tmux send-keys 'git s' 'C-m'
+tmux send-keys 'yst' 'C-m'
+
+# open a split
+tmux split-window -l 20
+tmux send-keys 'surfnative' 'C-m'
+tmux send-keys 'node' 'C-m'

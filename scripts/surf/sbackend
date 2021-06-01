@@ -7,9 +7,9 @@ tmux send-keys 'surf' 'C-m'
 tmux send-keys 'vim' 'C-m'
 
 # open bash window
-tmux new-window -n console
-tmux send-keys 'surf' 'C-m'
-tmux send-keys 'rails c' 'C-m'
+# tmux new-window -n console
+# tmux send-keys 'surf' 'C-m'
+# tmux send-keys 'rails c' 'C-m'
 
 # split window
 # tmux split-window -h
@@ -22,13 +22,12 @@ tmux new-window -n server
 tmux send-keys 'surf' 'C-m'
 myip="$(hostname -I | cut -d' ' -f1)"
 tmux send-keys "rails server -b ${myip} -p 3000" "C-m"
-# tmux send-keys "rails s" "C-m"
 
 # sidekiq
-tmux new-window -n sidekiq
-tmux send-keys 'surf' 'C-m'
-tmux send-keys 'sidekiq' 'C-m'
+# tmux new-window -n sidekiq
+# tmux send-keys 'surf' 'C-m'
+# tmux send-keys 'bundle exec sidekiq' 'C-m'
 
 # vim notes
-tmux new-window -n notes
+# tmux new-window -n notes
 # tmux send-keys 'vim ~/Documents/Notes/Surfcheck' 'C-m'

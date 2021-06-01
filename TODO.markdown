@@ -58,6 +58,14 @@ easymotion
 <leader><leader>w
 <leader><leader>e
 
+priettier ruby
+https://github.com/neoclide/coc-prettier/issues/39
+./node\*modules/.bin/prettier --write '\*\*/\_.rb'
+CocCommand prettier.formatFile
+
+search and replace system wide
+https://jdhao.github.io/2020/03/14/nvim_search_replace_multiple_file/
+
 TODO
 
 - configure markers to not be deleted when deleting the line

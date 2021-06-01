@@ -14,4 +14,6 @@
   "clangd.enabled": true,
   "solargraph.autoformat": true,
   "solargraph.formatting": true,
+  "solargraph.diagnostics": false,
+  "solargraph.trace.server": "messages"
 }
