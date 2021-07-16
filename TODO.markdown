@@ -43,7 +43,7 @@ fzf-complete-line
 <c-x><c-l>
 
 to edit snippets for the current file
-:CocCommand snippets.editSnippets
+CocCommand snippets.editSnippets
 <c-j> next placeholder
 <c-k> prev placeholder
 

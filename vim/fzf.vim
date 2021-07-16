@@ -7,7 +7,7 @@ let g:fzf_preview_window = 'right:60%'
 " let g:fzf_tags_command = 'ctags -R --excmd=number'
 
 " navigate buffer
-nmap <Leader>b :Buffers<CR>
+nmap <Leader>b :Lines<CR>
 nnoremap <silent><S-j> :bprevious<CR>
 " verbose nmap <S-k> (was mapped to coc)
 verbose nnoremap <silent><S-k> :bnext<CR>
@@ -52,7 +52,13 @@ let $FZF_DEFAULT_OPTS='--reverse'
 " Insert mode completion
 imap <c-x><c-i> <plug>(fzf-complete-word)
 imap <c-x><c-f> <plug>(fzf-complete-path)
-imap <c-x><c-l> <plug>(fzf-complete-line)
+" imap <c-x><c-l> <plug>(fzf-complete-line)
+" Global line completion (not just open buffers. ripgrep required.)
+inoremap <expr> <c-x><c-l> fzf#vim#complete(fzf#wrap({
+  \ 'prefix': '^.*$',
+  \ 'source': 'rg -n ^ --color always',
+  \ 'options': '--ansi --delimiter : --nth 3..',
+  \ 'reducer': { lines -> join(split(lines[0], ':\zs')[2:], '') }}))
 
 " fzf#vim#gitfiles(git_options, [spec dict], [fullscreen bool])
 command! -bang -nargs=* -complete=dir GFiles
@@ -67,3 +73,10 @@ command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
   \   'rg --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
   \   fzf#vim#with_preview(), <bang>0)
+
+" https://github.com/junegunn/fzf.vim/issues/374#issuecomment-475856472
+command! -bang -nargs=* CustomBLines
+    \ call fzf#vim#grep(
+    \   'rg --with-filename --column --line-number --no-heading --smart-case . '.fnameescape(expand('%:p')), 1,
+    \   fzf#vim#with_preview({'options': '--keep-right --delimiter : --nth 4.. --preview "bat -p --color always {}"'}, 'right:60%' ))
+nnoremap / :CustomBLines<Cr>

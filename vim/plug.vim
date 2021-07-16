@@ -39,30 +39,30 @@ Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --f
 
 " Syntax
 " https://github.com/nvim-treesitter/nvim-treesitter
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
-" Plug 'leafgarland/typescript-vim'
+Plug 'leafgarland/typescript-vim'
 " Typescript
-Plug 'HerringtonDarkholme/yats.vim'
+" Plug 'HerringtonDarkholme/yats.vim'
 " Plug 'mxw/vim-jsx'
-Plug 'udalov/kotlin-vim'
+" Plug 'udalov/kotlin-vim'
 " Plug 'kchmck/vim-coffee-script'
 " Markdown
-Plug 'godlygeek/tabular'
+" Plug 'godlygeek/tabular'
 " Plug 'plasticboy/vim-markdown'
-Plug 'iamcco/markdown-preview.nvim'
+" Plug 'iamcco/markdown-preview.nvim'
 
 " Objective C
-Plug 'kentaroi/cocoa.vim'
-Plug 'keith/swift.vim'
+" Plug 'kentaroi/cocoa.vim'
+" Plug 'keith/swift.vim'
 " Plug 'b4winckler/vim-objc'
 
 " Android Sdk
 " Plug 'hsanson/vim-android'
 
 " Java syntax highlighting
-Plug 'uiiaoo/java-syntax.vim'
+" Plug 'uiiaoo/java-syntax.vim'
 
 " Testing
 " Plug 'rlue/vim-fold-rspec'
