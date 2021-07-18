@@ -6,6 +6,10 @@ tmux rename-session "h - home"
 tmux new-window -n zsh
 tmux send-keys 'vim ~/.zshrc' 'C-m'
 
+# open a split
+tmux split-window -l 20
+tmux send-keys 'cd ~/.dotfiles' 'C-m'
+
 # scripts
 tmux new-window -n scripts
 tmux send-keys 'cd ~/.dotfiles' 'C-m'

@@ -8,6 +8,7 @@ let g:fzf_preview_window = 'right:60%'
 
 " navigate buffer
 nmap <Leader>b :Lines<CR>
+nmap <C-m> :Marks<CR>
 nnoremap <silent><S-j> :bprevious<CR>
 " verbose nmap <S-k> (was mapped to coc)
 verbose nnoremap <silent><S-k> :bnext<CR>
@@ -78,5 +79,7 @@ command! -bang -nargs=* Rg
 command! -bang -nargs=* CustomBLines
     \ call fzf#vim#grep(
     \   'rg --with-filename --column --line-number --no-heading --smart-case . '.fnameescape(expand('%:p')), 1,
-    \   fzf#vim#with_preview({'options': '--keep-right --delimiter : --nth 4.. --preview "bat -p --color always {}"'}, 'right:60%' ))
-nnoremap / :CustomBLines<Cr>
+    \   fzf#vim#with_preview({'options': '--layout reverse --query '.shellescape(<q-args>).' --with-nth=4.. --delimiter=":"'}, 'right:70%'))
+    " \   fzf#vim#with_preview({'options': '--layout reverse  --with-nth=-1.. --delimiter="/"'}, 'right:50%'))
+
+nnoremap <leader>s :CustomBLines<Cr>

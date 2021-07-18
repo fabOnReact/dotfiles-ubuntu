@@ -1,0 +1,26 @@
+#!/bin/sh
+# rename session
+tmux rename-session "a - comm"
+# open js library
+tmux new-window
+tmux rename-window "vim"
+
+# open react native
+tmux send-keys 'os && cd comm' 'C-m'
+tmux send-keys 'vim' 'C-m'
+
+# open a split
+tmux split-window -l 4
+tmux send-keys 'os && cd comm/native && yarn dev' 'C-m'
+
+# open server
+tmux new-window
+tmux rename-window "server"
+tmux send-keys 'os && cd comm/server && yarn dev' 'C-m'
+
+# open bash window
+tmux split-window -l 20 
+tmux send-keys 'os && cd comm' 'C-m'
+
+# return to window number 1
+tmux select-window -t 1
