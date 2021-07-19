@@ -44,6 +44,10 @@ fzf-complete-line
 
 to edit snippets for the current file
 CocCommand snippets.editSnippets
+
+to list snippets
+CocList snippets
+
 <c-j> next placeholder
 <c-k> prev placeholder
 

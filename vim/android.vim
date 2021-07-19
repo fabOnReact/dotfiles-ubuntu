@@ -1,4 +1,5 @@
 nnoremap <C-x>s :!run_app<Enter>
 nnoremap <C-x>b :Dispatch! yarn react-native run-android<Enter>
 nnoremap <C-x>w :Dispatch! ./gradlew :app:installDebug --daemon<Enter>
-" nnoremap <C-a>t :Dispatch! cd /home/fabrizio/Documents/sourcecode/reactnative/urbi-react-native/Urbi && yarn android --appId co.urbi.tier.debug<Enter>
+" Reload React Native App
+nnoremap <C-x>r :Dispatch! adb shell input keyevent 82 && sleep 1s && adb shell input keyevent 66 && notify-send "load sent"<Enter>

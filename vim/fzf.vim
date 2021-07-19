@@ -8,7 +8,7 @@ let g:fzf_preview_window = 'right:60%'
 
 " navigate buffer
 nmap <Leader>b :Lines<CR>
-nmap <C-m> :Marks<CR>
+" nmap <C-m> :Marks<CR>
 nnoremap <silent><S-j> :bprevious<CR>
 " verbose nmap <S-k> (was mapped to coc)
 verbose nnoremap <silent><S-k> :bnext<CR>

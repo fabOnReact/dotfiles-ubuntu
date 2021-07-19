@@ -10,8 +10,8 @@ tmux send-keys 'os && cd comm' 'C-m'
 tmux send-keys 'vim' 'C-m'
 
 # open a split
-tmux split-window -l 4
-tmux send-keys 'os && cd comm/native && yarn dev' 'C-m'
+tmux split-window -l 20
+tmux send-keys "os && cd comm/native && yarng 'TESTING::'" 'C-m'
 
 # open server
 tmux new-window
