@@ -69,7 +69,7 @@ nnoremap <silent><S-y> 5<c-y>
 set cursorline
 
 " use q? instead of /
-nnoremap / q/i
+" nnoremap / q/i
 
 " https://github.com/alvan/vim-closetag#options
 let g:closetag_filenames = '*.js'
