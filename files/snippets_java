@@ -1,15 +1,19 @@
-snippet lg [ "FLog.w(TESTING..)" ]
+snippet lg "log"
 FLog.w("TESTING::`!p snip.rv = snip.basename`", "${1}");
 endsnippet
 
-snippet lgo [ "FLog.w(TESTING..)" ]
-FLog.w("TESTING::`!p snip.rv = snip.basename`, "${1}: " + ( ${1} ));
+snippet log "log an object"
+FLog.w("TESTING::`!p snip.rv = snip.basename`", "${1}: " + ( ${1} ));
 endsnippet
 
-snippet ta [ "FLog.w(TESTING..)" ]
+snippet ta "filter by tag"
 Object tag = ${1:view}.getTag(R.id.view_tag_native_id);
 if (tag instanceof String && (tag.equals("${2:1}") || tag.equals("${3:1}"))) {
-	FLog.w("TESTING::`!p snip.rv = snip.basename`, "tag: " + (tag));
+	FLog.w("TESTING::`!p snip.rv = snip.basename`", "tag: " + (tag));
 	${4}
 }
+endsnippet
+
+snippet color "string to color"
+String hexColor = String.format("#%06X", (0xFFFFFF & textShadowNode.mBackgroundColor));
 endsnippet
