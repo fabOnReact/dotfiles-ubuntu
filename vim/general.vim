@@ -1,6 +1,6 @@
 " vtr
 map <C-t>g :VtrSendLinesToRunner<CR>
-map <C-f>r :VtrFocusRunner<CR>
+map <C-x>r :VtrFocusRunner<CR>
 
 " Nerdtree
 map <C-n> :NERDTreeToggle .<CR>

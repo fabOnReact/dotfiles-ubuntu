@@ -20,7 +20,7 @@ nnoremap <leader>d :BTags<cr>
 " Windows
 " nnoremap <leader>w :Windows<cr>
 " Find
-nnoremap <silent><leader>f :Rg<cr>
+nnoremap <silent><C-f> :Rg<cr>
  
 " let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
 
