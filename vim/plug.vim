@@ -1,7 +1,7 @@
 " Basic
 Plug 'preservim/nerdtree'
 Plug 'vim-ruby/vim-ruby'
-Plug 'tpope/vim-rails'
+" Plug 'tpope/vim-rails'
 
 " Search
 " Plug 'ctrlpvim/ctrlp.vim'
@@ -34,12 +34,13 @@ Plug 'tpope/vim-dispatch'
 " Ultisnips - not work with coc
 " https://github.com/honza/vim-snippets
 " https://github.com/dsznajder/vscode-es7-javascript-react-snippets
+Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
 
 " Syntax
 " https://github.com/nvim-treesitter/nvim-treesitter
-" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
@@ -66,7 +67,7 @@ Plug 'leafgarland/typescript-vim'
 
 " Testing
 " Plug 'rlue/vim-fold-rspec'
-Plug 'janko-m/vim-test'
+" Plug 'janko-m/vim-test'
 
 " Text Objects
 " https://github.com/tpope/vim-surround
@@ -82,7 +83,7 @@ Plug 'xolox/vim-misc'
 Plug 'alvan/vim-closetag'
 
 " Notes
-Plug 'xolox/vim-notes'
+" Plug 'xolox/vim-notes'
 
 " Tmux integration
 Plug 'christoomey/vim-tmux-navigator'  
@@ -90,8 +91,12 @@ Plug 'christoomey/vim-tmux-runner'
 Plug 'gianarb/notify.vim'
 
 " Syntax Checks
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'ycm-core/YouCompleteMe'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+ 
 
 " google-java
 " Add maktaba and codefmt to the runtimepath.
@@ -131,4 +136,4 @@ Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 " Plug 'yuttie/comfortable-motion.vim'
 " https://github.com/easymotion/vim-easymotion
 " https://youtu.be/7X0ELN_YGtE
-Plug 'easymotion/vim-easymotion'
+" Plug 'easymotion/vim-easymotion'
