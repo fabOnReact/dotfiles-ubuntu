@@ -16,8 +16,8 @@ let g:mkdp_auto_start = 1
 let g:mkdp_auto_close = 1
 
 " vim-prettier run at autosave
-" let g:prettier#autoformat = 1
-" let g:prettier#autoformat_require_pragma = 0
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
 set cmdheight=1
 
 " gruvbox color set up
@@ -27,6 +27,7 @@ set background=light
 " set background=dark
 let g:gruvbox_contrast_light='hard'
 " let g:gruvbox_contrast_dark='hard'
+au BufReadPost *.js set syntax=typescript
 
 " fix color issue with neovim
 set t_Co=256
@@ -60,6 +61,22 @@ set splitbelow
 " Scrolling 10 at time
 nnoremap <silent><S-e> 5<c-e>
 nnoremap <silent><S-y> 5<c-y>
+
+" Swap global marks
+" https://stackoverflow.com/a/9009504/7295772
+" https://unix.stackexchange.com/questions/154845/reverse-global-and-local-marks-in-vi-vim
+nnoremap ma mA
+nnoremap `a `A
+nnoremap 'a 'A
+nnoremap ms ms
+nnoremap `s `s
+nnoremap 's 's
+nnoremap md md
+nnoremap `d `d
+nnoremap 'd 'd
+nnoremap mf mf
+nnoremap `f `f
+nnoremap 'f 'f
 
 " https://stackoverflow.com/a/52548754/11452286
 " open tag in vertical split (previously was tmux.conf next-window)
