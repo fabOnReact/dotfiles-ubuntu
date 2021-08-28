@@ -75,6 +75,13 @@ command! -bang -nargs=* Rg
   \   'rg --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
   \   fzf#vim#with_preview(), <bang>0)
 
+" https://www.chrisatmachine.com/Neovim/08-fzf/
+" Enable per-command history.
+" CTRL-N and CTRL-P will be automatically bound to next-history and
+" previous-history instead of down and up. If you don't like the change,
+" explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
+let g:fzf_history_dir = '~/.local/share/fzf-history'
+
 " https://github.com/junegunn/fzf.vim/issues/374#issuecomment-475856472
 command! -bang -nargs=* CustomBLines
     \ call fzf#vim#grep(
