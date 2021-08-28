@@ -52,7 +52,7 @@ let $FZF_DEFAULT_OPTS='--reverse'
 " https://github.com/junegunn/fzf.vim#custom-completion
 " Insert mode completion
 imap <c-x><c-i> <plug>(fzf-complete-word)
-imap <c-x><c-f> <plug>(fzf-complete-path)
+" imap <c-x><c-f> <plug>(fzf-complete-path)
 " imap <c-x><c-l> <plug>(fzf-complete-line)
 " Global line completion (not just open buffers. ripgrep required.)
 inoremap <expr> <c-x><c-l> fzf#vim#complete(fzf#wrap({

@@ -2,7 +2,7 @@
 " run build command
 " build shortcut for gradle
 " nnoremap <c-f>b :wa<CR>:VtrSendCommandToRunner buildAndNotifyExpo<CR>
-nnoremap <c-f>b :wa<cr>:VtrSendCommandToRunner buildandnotify<cr>
+nnoremap <c-x>b :wa<cr>:VtrSendCommandToRunner buildandnotify<cr>
 
 " save and reload
 " nnoremap <c-f>b :wa<CR>:VtrSendCommandToRunner r<CR>
@@ -15,7 +15,7 @@ nnoremap <c-f>b :wa<cr>:VtrSendCommandToRunner buildandnotify<cr>
 " nnoremap <c-f>b :wa<CR>:VtrSendCommandToRunner btf<CR>
 
 " send ctrl+c to attached pane
-nnoremap <c-f>c :VtrSendCtrlC<CR>
+nnoremap <c-x>c :VtrSendCtrlC<CR>
 
 " enable talkback
 nnoremap <c-t>t :!adb shell settings put secure enabled_accessibility_services com.google.android.marvin.talkback/com.google.android.marvin.talkback.TalkBackService<CR>
