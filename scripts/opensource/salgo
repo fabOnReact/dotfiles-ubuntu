@@ -1,0 +1,14 @@
+#!/bin/sh
+# rename session
+tmux rename-session "a - algo"
+# open js library
+tmux new-window
+tmux rename-window "vim"
+
+# open react native
+tmux send-keys 'code && algo' 'C-m'
+tmux send-keys 'vim' 'C-m'
+
+# open a split
+tmux split-window -l 20
+tmux send-keys "code && algo" 'C-m'
