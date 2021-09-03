@@ -3,8 +3,10 @@ map <C-t>g :VtrSendLinesToRunner<CR>
 map <C-x>r :VtrFocusRunner<CR>
 
 " Nerdtree
-map <C-n> :NERDTreeToggle .<CR>
-" let g:NERDTreeChDirMode = 3
+" map <C-n> :NERDTreeToggle .<CR>
+" https://stackoverflow.com/a/5801491/7295772
+map <C-n> :NERDTreeToggle %:p:h<CR>
+let g:NERDTreeChDirMode = 2
 
 let g:notes_directories = ['~/Documents/Notes']
 
