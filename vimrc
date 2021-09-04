@@ -46,4 +46,4 @@ source ~/.dotfiles/vim/fzf.vim
 source ~/.dotfiles/vim/objc.vim
 source ~/.dotfiles/vim/reactnative.vim
 source ~/.dotfiles/vim/surfnative.vim
-" source ~/.dotfiles/vim/youcompleteme.vim
+source ~/.dotfiles/vim/youcompleteme.vim

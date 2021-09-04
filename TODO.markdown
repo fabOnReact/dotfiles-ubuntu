@@ -72,6 +72,9 @@ https://jdhao.github.io/2020/03/14/nvim_search_replace_multiple_file/
 
 c-w o to expand split window
 
+To find a mapping
+:verbose imap
+
 TODO
 
 - configure markers to not be deleted when deleting the line
