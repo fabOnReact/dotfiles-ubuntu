@@ -34,7 +34,7 @@ source ~/.dotfiles/vim/copy-paste.vim
 source ~/.dotfiles/vim/folding.vim
 source ~/.dotfiles/vim/android.vim
 source ~/.dotfiles/vim/java.vim
-" source ~/.dotfiles/vim/coc.vim
+source ~/.dotfiles/vim/coc.vim
 source ~/.dotfiles/vim/sneak.vim
 source ~/.dotfiles/vim/signify.vim
 source ~/.dotfiles/vim/general.vim
@@ -46,4 +46,4 @@ source ~/.dotfiles/vim/fzf.vim
 source ~/.dotfiles/vim/objc.vim
 source ~/.dotfiles/vim/reactnative.vim
 source ~/.dotfiles/vim/surfnative.vim
-source ~/.dotfiles/vim/youcompleteme.vim
+" source ~/.dotfiles/vim/youcompleteme.vim
