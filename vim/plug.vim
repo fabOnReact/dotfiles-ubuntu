@@ -137,3 +137,6 @@ Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 " https://github.com/easymotion/vim-easymotion
 " https://youtu.be/7X0ELN_YGtE
 " Plug 'easymotion/vim-easymotion'
+
+" https://github.com/preservim/nerdcommenter
+Plug 'preservim/nerdcommenter'

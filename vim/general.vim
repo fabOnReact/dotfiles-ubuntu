@@ -92,3 +92,6 @@ set cursorline
 
 " https://github.com/alvan/vim-closetag#options
 let g:closetag_filenames = '*.js'
+
+" https://github.com/preservim/nerdcommenter#settings
+let g:NERDCreateDefaultMappings = 1
