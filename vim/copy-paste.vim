@@ -1,3 +1,5 @@
+set clipboard=unnamed
+
 " Copy and Paste from/to system clipboard
 " https://github.com/fabriziobertoglio1987/.dotfiles/commit/0c3600b7676c6b0dda2b1d1c2762e5cd330feb5b
 " copy with f7

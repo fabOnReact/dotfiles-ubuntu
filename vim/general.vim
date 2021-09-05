@@ -1,21 +1,8 @@
-" vtr
-map <C-t>g :VtrSendLinesToRunner<CR>
-map <C-x>r :VtrFocusRunner<CR>
-
 " Nerdtree
 map <C-n> :NERDTreeToggle .<CR>
 " https://stackoverflow.com/a/5801491/7295772
 " map <C-n> :NERDTreeToggle %:p:h<CR>
 let g:NERDTreeChDirMode = 2
-
-let g:notes_directories = ['~/Documents/Notes']
-
-" Git
-noremap <leader>gc :GCheckout<CR>
-noremap <leader>gs :Gtabedit :<CR>
-" Markdown settings
-let g:mkdp_auto_start = 1
-let g:mkdp_auto_close = 1
 
 " vim-prettier run at autosave
 let g:prettier#autoformat = 1
@@ -24,12 +11,10 @@ set cmdheight=1
 
 " gruvbox color set up
 autocmd vimenter * colorscheme gruvbox 
-
 set background=light
 " set background=dark
 let g:gruvbox_contrast_light='hard'
 " let g:gruvbox_contrast_dark='hard'
-au BufReadPost *.js set syntax=typescript
 
 " fix color issue with neovim
 set t_Co=256
@@ -39,26 +24,16 @@ set termguicolors
 hi TabLineFill ctermfg=LightGreen ctermbg=DarkGreen
 hi TabLine ctermfg=Blue ctermbg=Yellow
 
-" set objc syntax highlighting
-au BufReadPost *.m set syntax=objc
-au BufReadPost *.mm set syntax=objc
-
 " cmdline omnicompletion
 " https://vi.stackexchange.com/questions/11411/is-there-a-version-of-vim-or-plugin-with-a-command-mode-auto-completion
 set wildmenu
 set wildmode=longest,list,full
 
-" do not show highlighting
+" do not show highlighting in search
 set nohlsearch
 
 " terminal zsh
-set splitbelow
-
-" format files on save
-" coc.preferences.formatOnSaveFiletypes": ["typescript", "typescriptreact"],
-
-" create coc-vimsnippets https://github.com/neoclide/coc-snippets
-" CocCommand snippets.editSnippets
+" set splitbelow
 
 " Scrolling 10 at time
 nnoremap <silent><S-e> 5<c-e>
@@ -80,18 +55,41 @@ nnoremap mf mf
 nnoremap `f `f
 nnoremap 'f 'f
 
-" https://stackoverflow.com/a/52548754/11452286
-" open tag in vertical split (previously was tmux.conf next-window)
-" nnoremap <C-W><C-V>f :exec "vert norm <C-V><C-W>f"<CR>
-
 " https://stackoverflow.com/questions/40362460/show-cursor-in-command-line-mode
 set cursorline
 
 " use q? instead of /
 " nnoremap / q/i
 
-" https://github.com/alvan/vim-closetag#options
-let g:closetag_filenames = '*.js'
-
 " https://github.com/preservim/nerdcommenter#settings
 let g:NERDCreateDefaultMappings = 1
+
+" surrounds mappings to move between brackets
+" https://github.com/alvan/vim-closetag#options
+let g:closetag_filenames = '*.js'
+" https://vim.fandom.com/wiki/Making_Parenthesis_And_Brackets_Handling_Easier
+inoremap <C-j> <Esc>/[)}"'\]>]<CR>:nohl<CR>a
+
+" Ultisnips config
+" Trigger snippet with tab. Do not use <tab> if you use YouCompleteMe.
+" https://github.com/SirVer/ultisnips/issues/376#issuecomment-55326568
+let g:UltiSnipsExpandTrigger = "<nop>"
+inoremap <expr> <CR> pumvisible() ? "<C-R>=UltiSnips#ExpandSnippetOrJump()<CR>" : "\<CR>"
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger       = '<tab>'
+let g:UltiSnipsJumpForwardTrigger  = '<C-j>'
+let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
+
+" Git
+" noremap <leader>gc :GCheckout<CR>
+" noremap <leader>gs :Gtabedit :<CR>
+
+" Markdown settings
+" let g:mkdp_auto_start = 1
+" let g:mkdp_auto_close = 1
+
+" https://stackoverflow.com/a/52548754/11452286
+" open tag in vertical split (previously was tmux.conf next-window)
+" nnoremap <C-W><C-V>f :exec "vert norm <C-V><C-W>f"<CR>
+

@@ -1,28 +1,16 @@
-" mapping for opening fzf
-nnoremap <silent> <C-p> :GFiles<CR>
-" hide preview
-" let g:fzf_preview_window = ''
-let g:fzf_preview_window = 'right:60%' 
-" command to generate tag files
-" let g:fzf_tags_command = 'ctags -R --excmd=number'
-
-" navigate buffer
-nmap <Leader>b :Lines<CR>
-" nmap <C-m> :Marks<CR>
 nnoremap <silent><S-j> :bprevious<CR>
 " verbose nmap <S-k> (was mapped to coc)
 verbose nnoremap <silent><S-k> :bnext<CR>
 
-" Ctags 
+" Shortcuts
+nnoremap <silent> <C-p> :GFiles<CR>
+let g:fzf_preview_window = 'right:60%' 
+nmap <Leader>b :Lines<CR>
 " tag search for current word 
 map <leader>c :Tags <C-r><C-w><cr>
 nnoremap <leader>d :BTags<cr>
-" Windows
-" nnoremap <leader>w :Windows<cr>
 " Find
 nnoremap <silent><C-f> :Rg<cr>
- 
-" let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
 
 let g:fzf_colors =
     \ { 'fg':      ['fg', 'Normal'],
@@ -90,3 +78,12 @@ command! -bang -nargs=* CustomBLines
     " \   fzf#vim#with_preview({'options': '--layout reverse  --with-nth=-1.. --delimiter="/"'}, 'right:50%'))
 
 nnoremap <leader>s :CustomBLines<Cr>
+
+" command to generate tag files
+" let g:fzf_tags_command = 'ctags -R --excmd=number'
+
+" nmap <C-m> :Marks<CR>
+" Windows
+" nnoremap <leader>w :Windows<cr>
+ 
+" let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'

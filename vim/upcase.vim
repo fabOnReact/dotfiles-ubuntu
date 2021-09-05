@@ -7,6 +7,9 @@ nnoremap <leader>v :wincmd =<cr>
 " https://github.com/christoomey/vim-tmux-navigator#disable-while-zoomed
 " Disable tmux navigator when zooming the Vim pane
 let g:tmux_navigator_disable_when_zoomed = 1
+" vtr
+map <C-x>g :VtrSendLinesToRunner<CR>
+map <C-x>r :VtrFocusRunner<CR>
 
 " https://vim.fandom.com/wiki/Resize_splits_more_quickly
 " https://codingfearlessly.com/vim-putting-arrows-to-use
