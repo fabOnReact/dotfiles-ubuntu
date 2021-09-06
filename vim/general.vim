@@ -70,17 +70,6 @@ let g:closetag_filenames = '*.js'
 " https://vim.fandom.com/wiki/Making_Parenthesis_And_Brackets_Handling_Easier
 inoremap <C-j> <Esc>/[)}"'\]>]<CR>:nohl<CR>a
 
-" Ultisnips config
-" Trigger snippet with tab. Do not use <tab> if you use YouCompleteMe.
-" https://github.com/SirVer/ultisnips/issues/376#issuecomment-55326568
-let g:UltiSnipsExpandTrigger = "<nop>"
-inoremap <expr> <CR> pumvisible() ? "<C-R>=UltiSnips#ExpandSnippetOrJump()<CR>" : "\<CR>"
-
-" better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger       = '<tab>'
-let g:UltiSnipsJumpForwardTrigger  = '<C-j>'
-let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
-
 " Git
 " noremap <leader>gc :GCheckout<CR>
 " noremap <leader>gs :Gtabedit :<CR>

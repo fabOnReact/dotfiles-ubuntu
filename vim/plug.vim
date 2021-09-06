@@ -28,10 +28,11 @@ Plug 'kana/vim-textobj-user'
 Plug 'tpope/vim-dispatch'
 
 " Snippets
-" Ultisnips
-Plug 'SirVer/ultisnips'
 " https://github.com/honza/vim-snippets
 Plug 'honza/vim-snippets'
+" Ultisnips
+" conflicts with coc-snippets and coc
+" Plug 'SirVer/ultisnips'
 " https://github.com/dsznajder/vscode-es7-javascript-react-snippets
 " Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
 
@@ -63,7 +64,8 @@ Plug 'gianarb/notify.vim'
 
 " Language Server
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'ycm-core/YouCompleteMe'
+" removed temporarely because sets a keybiding on tab
+" Plug 'ycm-core/YouCompleteMe'
 
 " Syntax Checks
 Plug 'prettier/vim-prettier', {

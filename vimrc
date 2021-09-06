@@ -28,6 +28,7 @@ source ~/.dotfiles/vim/copy-paste.vim
 source ~/.dotfiles/vim/android.vim
 source ~/.dotfiles/vim/java.vim
 source ~/.dotfiles/vim/coc.vim
+source ~/.dotfiles/vim/snippets.vim
 source ~/.dotfiles/vim/signify.vim
 source ~/.dotfiles/vim/general.vim
 source ~/.dotfiles/vim/format.vim
