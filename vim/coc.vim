@@ -1,3 +1,6 @@
+" install modules
+let g:coc_global_extensions = ['coc-pairs', 'coc-explorer', 'coc-flow', 'coc-grammarly']
+
 " TextEdit might fail if hidden is not set.
 set hidden
 
@@ -97,9 +100,6 @@ nmap <leader>a <Plug>(coc-codeaction-selected)
 
 " https://github.com/weirongxu/coc-explorer
 nnoremap <C-n> :CocCommand explorer<CR>
-
-" install modules
-let g:coc_global_extensions = ['coc-pairs', 'coc-explorer', 'coc-flow']
 
 " Remap <C-f> and <C-b> for scroll float windows/popups.
 " if has('nvim-0.4.0') || has('patch-8.2.0750')
