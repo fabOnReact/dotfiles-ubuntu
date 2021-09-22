@@ -1,5 +1,5 @@
 " Nerdtree
-map <C-n> :NERDTreeToggle .<CR>
+" map <C-n> :NERDTreeToggle .<CR>
 " https://stackoverflow.com/a/5801491/7295772
 " map <C-n> :NERDTreeToggle %:p:h<CR>
 let g:NERDTreeChDirMode = 2

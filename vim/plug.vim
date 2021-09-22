@@ -1,5 +1,5 @@
 " Basic
-Plug 'preservim/nerdtree'
+" Plug 'preservim/nerdtree'
 
 " Search
 " https://www.chrisatmachine.com/Neovim/08-fzf/
