@@ -98,9 +98,6 @@ autocmd CursorHold * :call <SID>show_hover_doc()
 vmap <leader>a <Plug>(coc-codeaction-selected)
 nmap <leader>a <Plug>(coc-codeaction-selected)
 
-" https://github.com/weirongxu/coc-explorer
-nnoremap <C-n> :CocCommand explorer<CR>
-
 " Remap <C-f> and <C-b> for scroll float windows/popups.
 " if has('nvim-0.4.0') || has('patch-8.2.0750')
 "   nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
