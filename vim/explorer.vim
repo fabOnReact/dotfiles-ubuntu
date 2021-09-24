@@ -37,3 +37,7 @@ let g:coc_explorer_global_presets = {
 " nmap <space>e :CocCommand explorer<CR>
 nmap <C-n> :CocCommand explorer --preset floating<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+" https://github.com/weirongxu/coc-explorer/wiki/Highlight
+" js icon is yellow and can not be read with default color
+autocmd ColorScheme *
+  \ hi CocExplorerNormalFloat guibg=#cca300
