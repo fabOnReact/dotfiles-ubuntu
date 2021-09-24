@@ -39,6 +39,7 @@ source ~/.dotfiles/vim/fzf.vim
 source ~/.dotfiles/vim/objc.vim
 source ~/.dotfiles/vim/reactnative.vim
 source ~/.dotfiles/vim/youcompleteme.vim  
+source ~/.dotfiles/vim/explorer.vim  
 
 " Removed
 " source ~/.dotfiles/vim/vim-test.vim

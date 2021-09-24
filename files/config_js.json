@@ -26,5 +26,12 @@
   "solargraph.autoformat": true,
   "solargraph.formatting": true,
   "solargraph.diagnostics": false,
-  "solargraph.trace.server": "messages"
+  "solargraph.trace.server": "messages",
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings.global": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit"
+  }
 }
