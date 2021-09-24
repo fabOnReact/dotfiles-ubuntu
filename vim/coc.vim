@@ -1,5 +1,5 @@
 " install modules
-let g:coc_global_extensions = ['coc-pairs', 'coc-explorer', 'coc-flow', 'coc-grammarly']
+let g:coc_global_extensions = ['coc-xml', 'coc-tsserver', 'coc-pairs', 'coc-explorer', 'coc-flow', 'coc-grammarly', 'coc-dictionary', 'coc-emoji', 'coc-word', 'coc-prettier', 'coc-clangd', 'coc-solargraph', 'coc-snippets', 'coc-flow']
 
 " TextEdit might fail if hidden is not set.
 set hidden
