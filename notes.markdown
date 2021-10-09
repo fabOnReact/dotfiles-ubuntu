@@ -75,6 +75,13 @@ c-w o to expand split window
 To find a mapping
 :verbose imap
 
+Fix firefox dpi issue
+change firefox.desktop EXEC in /usr/share/applications/
+
+```
+env GDK_DPI_SCALE=0.5 firefox %u
+```
+
 TODO
 
 - configure markers to not be deleted when deleting the line
