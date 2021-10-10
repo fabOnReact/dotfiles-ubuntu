@@ -79,8 +79,16 @@ Fix firefox dpi issue
 change firefox.desktop EXEC in /usr/share/applications/
 
 ```
+sudo vim /usr/share/applications/firefox.desktop
 env GDK_DPI_SCALE=0.5 firefox %u
 ```
+
+Additionally installed the following gnome plugins:
+
+- [hide top bar][1]
+- no title bar forked
+
+[1]: https://extensions.gnome.org/extension/545/hide-top-bar/
 
 TODO
 
