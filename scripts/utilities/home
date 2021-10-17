@@ -1,6 +1,6 @@
 #!/bin/sh
 # give a name to the session
-tmux rename-session "h - home"
+tmux rename-session "home"
 
 # ~/.zshrc
 tmux new-window -n zsh

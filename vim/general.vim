@@ -13,7 +13,7 @@ set cmdheight=1
 autocmd vimenter * colorscheme gruvbox 
 set background=light
 " set background=dark
-let g:gruvbox_contrast_light='hard'
+" let g:gruvbox_contrast_light='hard'
 " let g:gruvbox_contrast_dark='hard'
 
 " fix color issue with neovim

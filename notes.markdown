@@ -75,18 +75,20 @@ c-w o to expand split window
 To find a mapping
 :verbose imap
 
-Fix firefox dpi issue
+Fix firefox dpi issue (using dpi at 2.0)
 change firefox.desktop EXEC in /usr/share/applications/
 
 ```
 sudo vim /usr/share/applications/firefox.desktop
-env GDK_DPI_SCALE=0.5 firefox %u
+env GDK_DPI_SCALE=0.65 firefox %u
 ```
 
 Additionally installed the following gnome plugins:
 
 - [hide top bar][1]
 - no title bar forked
+- gnome-tweaks Interface Text 8px
+- Thunderbird font size 18px
 
 [1]: https://extensions.gnome.org/extension/545/hide-top-bar/
 
