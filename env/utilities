@@ -18,3 +18,5 @@ alias vim='nvim'
 # Git
 unalias glg
 alias glg='git log --oneline --decorate  --max-count=5'
+export BAT_THEME="GitHub"
+# export BAT_THEME="TwoDark"
