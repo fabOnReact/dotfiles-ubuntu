@@ -1,6 +1,9 @@
 # React
 export REACT_EDITOR=vim
 
+# DPI
+# export GDK_DPI_SCALE=0.65
+
 ## ALIAS
 alias profile="source ~/.bash_profile"
 alias r="ranger"

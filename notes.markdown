@@ -83,6 +83,8 @@ sudo vim /usr/share/applications/firefox.desktop
 env GDK_DPI_SCALE=0.65 firefox %u
 ```
 
+also see [hdpi wiki](https://wiki.archlinux.org/title/HiDPI#Firefox)
+
 Additionally installed the following gnome plugins:
 
 - [hide top bar][1]
@@ -91,6 +93,9 @@ Additionally installed the following gnome plugins:
 - Thunderbird font size 18px
 
 [1]: https://extensions.gnome.org/extension/545/hide-top-bar/
+
+Firefox avoid using same zoom on each website page
+https://support.mozilla.org/en-US/questions/681298
 
 TODO
 
