@@ -1,9 +1,9 @@
 # environment variables
 # export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_251
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+# export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 # export JAVA_HOME=/usr/lib/jvm/jdk-15.0.2
 # export JAVA_HOME=/usr/lib/jvm/jdk-14.0.2
-# export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64
 export PATH=$PATH:$JAVA_HOME/bin
 export ANDROID_HOME=$HOME/Android/Sdk
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
@@ -15,7 +15,8 @@ export PATH=$PATH:/opt/android-studio/bin
 # export PATH=$PATH:/opt/buck/bin
 export PATH=$PATH:$HOME/Documents/sourcecode/opensource/buck/bin
 export ANDROID_SDK=$HOME/Android/Sdk
-export ANDROID_NDK=$ANDROID_SDK/ndk/17.2.4988734
+# export ANDROID_NDK=$ANDROID_SDK/ndk/17.2.4988734
+export ANDROID_NDK=$ANDROID_SDK/ndk/21.4.7075529
 # export ANDROID_NDK=/home/fabrizio/Downloads/android-ndk-r20b-linux-x86_64/android-ndk-r20b
 export REACT_EDITOR="/usr/bin/nvim"
 # alias
