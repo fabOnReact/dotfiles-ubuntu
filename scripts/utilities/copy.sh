@@ -8,6 +8,7 @@ cp /home/fabrizio/.dotfiles/scripts/utilities/susb /usr/bin/susb
 cp /home/fabrizio/.dotfiles/scripts/utilities/buildAndNotify /usr/bin/buildAndNotify
 cp /home/fabrizio/.dotfiles/scripts/utilities/buildAndNotifyExpo /usr/bin/buildAndNotifyExpo
 cp /home/fabrizio/.dotfiles/scripts/utilities/yarng /usr/bin/yarng
+cp /home/fabrizio/.dotfiles/scripts/utilities/dl /usr/bin/dl
 chown fabrizio:fabrizio /usr/bin/profile
 chown fabrizio:fabrizio /usr/bin/remap_control
 chown fabrizio:fabrizio /usr/bin/remap_right_click
@@ -24,3 +25,4 @@ chmod +x /usr/bin/susb
 chmod +x /usr/bin/buildAndNotify
 chmod +x /usr/bin/buildAndNotifyExpo
 chmod +x /usr/bin/yarng
+chmod +x /usr/bin/dl
