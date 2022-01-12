@@ -9,15 +9,13 @@
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "css",
-    "markdown"
+    "css"
   ],
   "tsserver.enableJavascript": true,
   "typescript.suggest.enabled": false,
-  "javascript.validate.enable": false,
+  "javascript.validate.enable": true,
   "typescript.validate.enable": false,
   "flow.enable": true,
-  "coc.source.word.filetypes": ["markdown"],
   "snippets.priority": 90,
   "snippets.autoTrigger": true,
   "clangd.disableDiagnostics": true,
