@@ -11,8 +11,7 @@ set cmdheight=1
 
 " gruvbox color set up
 autocmd vimenter * colorscheme gruvbox 
-set background=light
-" set background=dark
+set background=dark
 " let g:gruvbox_contrast_light='hard'
 " let g:gruvbox_contrast_dark='hard'
 
