@@ -1,3 +1,4 @@
+#!/bin/sh
 # Utilities
 export PATH=$PATH:/opt/NzbDrone
 export PATH=$PATH:/opt/Radarr

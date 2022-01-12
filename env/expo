@@ -1,2 +1,3 @@
+#!/bin/sh
 alias bane="buildAndNotifyExpo"
 alias cocexpo="echo 'y' | cp ~/.dotfiles/files/config_ts.json ~/.config/nvim/coc-settings.json"

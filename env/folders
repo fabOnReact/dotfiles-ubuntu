@@ -1,3 +1,4 @@
+#!/bin/sh
 # Environment
 export DOCS=$HOME/Documents
 export CODE=$DOCS/sourcecode

@@ -1,3 +1,4 @@
+#!/bin/sh
 alias hatchbox="ssh -o ServerAliveInterval=120 deploy@178.128.253.133"
 alias root@host="ssh -o ServerAliveInterval=120 root@64.227.121.142"
 alias fabrizio@host="ssh -o ServerAliveInterval=120 fabrizio@64.227.121.142"

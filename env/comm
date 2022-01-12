@@ -1,3 +1,4 @@
+#!/bin/sh
 alias server="DEBUG_COLORS=true DEBUG=express:* yarn dev"
 export PATH=$PATH:~/Applications/arcanist/bin
 alias dsql="docker exec -it my-mysql mysql -p"

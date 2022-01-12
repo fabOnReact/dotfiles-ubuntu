@@ -1,5 +1,5 @@
-# I can not see line in ctrl+f ripgrep search
-#  https://github.com/junegunn/fzf.vim/issues/1179#issuecomment-817239959
+" I can not see line in ctrl+f ripgrep search
+"  https://github.com/junegunn/fzf.vim/issues/1179#issuecomment-817239959
 let $FZF_PREVIEW_COMMAND="COLORTERM=truecolor bat --style=numbers --color=always {}"
 
 nnoremap <silent><S-j> :bprevious<CR>
