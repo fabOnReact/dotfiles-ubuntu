@@ -38,6 +38,7 @@ alias gradle_run='./gradlew :app:assembleDebug --daemon'
 alias rnlog="yarn react-native log-android"
 alias packager="./scripts/packager.sh"
 alias gt='ctags -R --excmd=number'
+alias change_java="sudo update-alternatives --config java"
 
 # os
 alias rntester="./gradlew :RNTester:android:app:installJscDebug"
