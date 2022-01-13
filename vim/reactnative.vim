@@ -1,8 +1,7 @@
 " https://stackoverflow.com/a/17391954/11452286
 " run build command
 " build shortcut for gradle
-" nnoremap <c-f>b :wa<CR>:VtrSendCommandToRunner buildAndNotifyExpo<CR>
-nnoremap <c-x>b :wa<cr>:VtrSendCommandToRunner buildandnotify<cr>
+nnoremap <c-x>b :wa<cr>:VtrSendCommandToRunner buildAndNotify<cr>
 
 " save and reload
 " nnoremap <c-f>b :wa<CR>:VtrSendCommandToRunner r<CR>

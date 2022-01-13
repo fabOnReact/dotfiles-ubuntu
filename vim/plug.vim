@@ -9,6 +9,7 @@ Plug 'stsewd/fzf-checkout.vim'
 Plug 'airblade/vim-rooter'
 " Plug 'zackhsi/fzf-tags'
 " Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
+" conflict with fzf.vim command :Rg
 " Plug 'jremmen/vim-ripgrep'
 
 " Git 

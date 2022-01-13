@@ -67,6 +67,11 @@ command! -bang -nargs=* Rg
   \   'rg --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
   \   fzf#vim#with_preview(), <bang>0)
 
+if executable("rg")
+    set grepprg=rg\ --vimgrep\ --no-heading
+    set grepformat=%f:%l:%c:%m,%f:%l:%m
+endif
+
 " https://www.chrisatmachine.com/Neovim/08-fzf/
 " Enable per-command history.
 " CTRL-N and CTRL-P will be automatically bound to next-history and
