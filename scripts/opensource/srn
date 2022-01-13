@@ -9,14 +9,13 @@ tmux rename-window "vim"
 # tmux send keys "echo 'y' | cp ~/.dotfiles/files/config_js.json ~/.config/nvim/coc-settings.json" 'C-m'
 
 # open react native
-tmux send-keys 'os' 'C-m'
-tmux send-keys 'cd react-native-fork' 'C-m'
+tmux send-keys 'aw' 'C-m'
+tmux send-keys 'cd node_modules/react-native' 'C-m'
 tmux send-keys 'vim' 'C-m'
 
 # open a split
 tmux split-window -l 4
-tmux send-keys 'os' 'C-m'
-tmux send-keys 'cd react-native-fork' 'C-m'
+tmux send-keys 'aw' 'C-m'
 tmux send-keys 'adbg &' 'C-m'
 
 # open AOSP
@@ -28,14 +27,12 @@ tmux send-keys 'adbg &' 'C-m'
 # open server
 tmux new-window
 tmux rename-window "server"
-tmux send-keys 'os' 'C-m'
-tmux send-keys 'cd react-native-fork' 'C-m'
+tmux send-keys 'aw' 'C-m'
 tmux send-keys 'yin' 'C-m'
-tmux send-keys 'ysr' 'C-m'
+tmux send-keys 'yst' 'C-m'
 # open bash window
 tmux split-window -l 20 
-tmux send-keys 'os' 'C-m'
-tmux send-keys 'cd react-native-fork' 'C-m'
+tmux send-keys 'aw' 'C-m'
 
 # return to window number 1
 tmux select-window -t 1
