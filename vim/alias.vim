@@ -7,6 +7,6 @@ cnoreabbrev gw Gwrite<CR>
 cnoreabbrev gco G commit<CR>
 cnoreabbrev gd Gdiff<CR>
 cnoreabbrev va VtrAttachToPane<CR>
-cnoreabbrev gb .GBrowse @upstream<CR>
+cnoreabbrev gb .GBrowse @origin<CR>
 cnoreabbrev pg :w<CR> :source %<CR> :PlugInstall<CR>
 cnoreabbrev so :source ./.vimrc<CR>
