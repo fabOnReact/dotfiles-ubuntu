@@ -1,8 +1,7 @@
 #!/bin/bash
 { # try
-    ./gradlew :packages:rn-tester:android:app:installJscDebug && notify-send "gradle_build_completed"
+    yarn react-native run-android && notify-send "gradle_build_completed"
     #save your output
 } || { # catch
     notify-send "gradle_build_failed"
 }
-adb shell am start -n 'com.facebook.react.uiapp/com.facebook.react.uiapp.RNTesterActivity' -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
