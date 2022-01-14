@@ -3,7 +3,7 @@
 tmux rename-session "a - reactnative"
 # open js library
 tmux new-window
-tmux rename-window "vim"
+tmux rename-window "react-native"
 
 # copy js settings
 # tmux send keys "echo 'y' | cp ~/.dotfiles/files/config_js.json ~/.config/nvim/coc-settings.json" 'C-m'

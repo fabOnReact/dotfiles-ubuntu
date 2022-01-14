@@ -62,10 +62,15 @@ command! -bang -nargs=* -complete=dir Buffers
       \ call fzf#vim#buffers(<q-args>, {'options': ['--delimiter', '/', '--with-nth', '-1..', '--preview', 'echo {};echo;~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
 
 " Rg with colors and preview 
+" command! -bang -nargs=* Rg
+"   \ call fzf#vim#grep(
+"   \   'rg --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
+"   \   fzf#vim#with_preview(), <bang>0)
+
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
-  \   'rg --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
-  \   fzf#vim#with_preview(), <bang>0)
+  \   "rg --column --line-number --no-heading --color=always --smart-case -- ".shellescape(<q-args>), 1,
+  \   fzf#vim#with_preview('up:80%', 'ctrl-/'), 1)
 
 if executable("rg")
     set grepprg=rg\ --vimgrep\ --no-heading
