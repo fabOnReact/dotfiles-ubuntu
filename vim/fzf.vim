@@ -54,8 +54,11 @@ inoremap <expr> <c-x><c-l> fzf#vim#complete(fzf#wrap({
   \ 'reducer': { lines -> join(split(lines[0], ':\zs')[2:], '') }}))
 
 " fzf#vim#gitfiles(git_options, [spec dict], [fullscreen bool])
+" command! -bang -nargs=* -complete=dir GFiles
+"       \ call fzf#vim#gitfiles(<q-args>, {'options': ['--delimiter', '/', '--with-nth', '-9..', '--preview', 'echo {};echo;~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
+
 command! -bang -nargs=* -complete=dir GFiles
-      \ call fzf#vim#gitfiles(<q-args>, {'options': ['--delimiter', '/', '--with-nth', '-9..', '--preview', 'echo {};echo;~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
+      \ call fzf#vim#gitfiles(<q-args>, fzf#vim#with_preview('up:90%', 'ctrl-/'), 1)
 
 " fzf#vim#buffers([spec dict], [fullscreen bool])
 command! -bang -nargs=* -complete=dir Buffers
@@ -72,6 +75,8 @@ command! -bang -nargs=* Rg
   \   "rg --column --line-number --no-heading --color=always --smart-case -- ".shellescape(<q-args>), 1,
   \   fzf#vim#with_preview('up:80%', 'ctrl-/'), 1)
 
+" use ripgrep instead of vimgrep
+" https://www.wezm.net/technical/2016/09/ripgrep-with-vim/
 if executable("rg")
     set grepprg=rg\ --vimgrep\ --no-heading
     set grepformat=%f:%l:%c:%m,%f:%l:%m
@@ -101,3 +106,6 @@ nnoremap <leader>s :CustomBLines<Cr>
 " nnoremap <leader>w :Windows<cr>
  
 " let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
+
+" /public\s[a-z]*\son[A-Z]<CR>
+" rg -e "public\s.*\sgetChildCount\("
