@@ -5,12 +5,13 @@ tmux rename-session "home"
 # ~/.zshrc
 tmux new-window -n zsh
 tmux send-keys 'vim ~/.zshrc' 'C-m'
+tmux rename-window ".ZSH"
 
 # open a split
 tmux split-window -l 20
 tmux send-keys 'cd ~/.dotfiles' 'C-m'
 
 # scripts
-tmux new-window -n scripts
+tmux new-window -n DOTFILES
 tmux send-keys 'cd ~/.dotfiles' 'C-m'
 tmux send-keys 'vim' 'C-m'

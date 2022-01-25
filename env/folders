@@ -12,18 +12,16 @@ export GITHUB_PR_NUMBER="28617"
 alias desktop_entries="cd /home/fabrizio/.local/share/applications"
 
 # Open Source folders
-alias aosp="cd /home/fabrizio/Documents/sourcecode/opensource/platform_frameworks_base/core/java/android"
+alias code="cd $DOCS/sourcecode"
+alias os="cd $CODE/opensource"
 
 # Projects Aliases
 alias surfnative="cd $CODE/reactnative/surfnative" 
 alias surfnotes="vim ~/Documents/Notes/Surfcheck"
-alias code="cd $DOCS/sourcecode"
 alias railspath="cd $CODE/rails"
-alias os="cd $CODE/opensource"
 alias association="cd $RAILSPATH/activerecord/lib/active_record/associations"
 alias relation="cd $RAILSPATH/activerecord/lib/active_record/relation"
 alias rncamera="cd $CODE/opensource/react-native-camera"
-alias native="cd $CODE/reactnative"
 alias rnlibs="cd $CODE/reactnative/libraries"
 alias portfolio="cd $CODE/rails/portfolio"
 alias social="cd $CODE/rails/SocialNetwork"
@@ -31,3 +29,9 @@ alias sprachspiel="cd $CODE/rails/SpracheSpiel"
 alias surf="cd $CODE/rails/surfcheck"
 alias myapp="cd $CODE/android/MyApplication"
 alias snippets="os && vim-snippets"
+
+# React Native OpenSource
+alias reactnative="cd $CODE/opensource/reactnative"
+alias aosp="cd $CODE/opensource/platform_frameworks_base/core/java/android"
+alias slider="cd $CODE/opensource/react-native-slider"
+alias progressbar="cd $CODE/opensource/progress-bar-android"

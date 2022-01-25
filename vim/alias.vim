@@ -5,7 +5,7 @@ cnoreabbrev pw CocCommand markdown-preview-enhanced.openPreview<CR>
 cnoreabbrev gp G push<CR>
 cnoreabbrev gw Gwrite<CR>
 cnoreabbrev gco G commit<CR>
-cnoreabbrev gd Gdiff<CR>
+cnoreabbrev gd Gvdiff<CR>
 cnoreabbrev va VtrAttachToPane<CR>
 cnoreabbrev gb .GBrowse @origin<CR>
 cnoreabbrev pg :w<CR> :source %<CR> :PlugInstall<CR>
