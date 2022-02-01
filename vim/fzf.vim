@@ -53,22 +53,11 @@ inoremap <expr> <c-x><c-l> fzf#vim#complete(fzf#wrap({
   \ 'options': '--ansi --delimiter : --nth 3..',
   \ 'reducer': { lines -> join(split(lines[0], ':\zs')[2:], '') }}))
 
-" fzf#vim#gitfiles(git_options, [spec dict], [fullscreen bool])
-" command! -bang -nargs=* -complete=dir GFiles
-"       \ call fzf#vim#gitfiles(<q-args>, {'options': ['--delimiter', '/', '--with-nth', '-9..', '--preview', 'echo {};echo;~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
-
 command! -bang -nargs=* -complete=dir GFiles
       \ call fzf#vim#gitfiles(<q-args>, fzf#vim#with_preview('up:90%', 'ctrl-/'), 1)
 
-" fzf#vim#buffers([spec dict], [fullscreen bool])
 command! -bang -nargs=* -complete=dir Buffers
       \ call fzf#vim#buffers(<q-args>, {'options': ['--delimiter', '/', '--with-nth', '-1..', '--preview', 'echo {};echo;~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
-
-" Rg with colors and preview 
-" command! -bang -nargs=* Rg
-"   \ call fzf#vim#grep(
-"   \   'rg --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
-"   \   fzf#vim#with_preview(), <bang>0)
 
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
@@ -97,6 +86,19 @@ command! -bang -nargs=* CustomBLines
     " \   fzf#vim#with_preview({'options': '--layout reverse  --with-nth=-1.. --delimiter="/"'}, 'right:50%'))
 
 nnoremap <leader>s :CustomBLines<Cr>
+
+" https://github.com/junegunn/fzf.vim/issues/800#issuecomment-552224315
+" Add your path here.
+let plugins_dir='/home/fabrizio/.vim/plugged/fzf.vim' 
+let preview_file = plugins_dir . "/fzf.vim/bin/preview.sh"
+command! -bang -nargs=* Tags
+  \ call fzf#vim#tags(<q-args>, {
+  \      'up': '90%',
+  \      'options': '
+  \         --with-nth 1,2
+  \         --preview-window="top:90%"
+  \         --preview ''' . preview_file . ' {2}:$(echo {3} | cut -d ";" -f 1)'''
+  \ }, <bang>0)
 
 " command to generate tag files
 " let g:fzf_tags_command = 'ctags -R --excmd=number'
