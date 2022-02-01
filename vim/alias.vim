@@ -10,3 +10,4 @@ cnoreabbrev va VtrAttachToPane<CR>
 cnoreabbrev gb .GBrowse @origin<CR>
 cnoreabbrev pg :w<CR> :source %<CR> :PlugInstall<CR>
 cnoreabbrev so :source ./.vimrc<CR>
+cnoreabbrev gdm Gvdiff master<CR>

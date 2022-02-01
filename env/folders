@@ -31,7 +31,7 @@ alias myapp="cd $CODE/android/MyApplication"
 alias snippets="os && vim-snippets"
 
 # React Native OpenSource
-alias reactnative="cd $CODE/opensource/reactnative"
+alias reactnative="cd $CODE/opensource/react-native-fork"
 alias aosp="cd $CODE/opensource/platform_frameworks_base/core/java/android"
 alias slider="cd $CODE/opensource/react-native-slider"
 alias progressbar="cd $CODE/opensource/progress-bar-android"
