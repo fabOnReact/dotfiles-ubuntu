@@ -2,6 +2,7 @@
 # Utilities
 export PATH=$PATH:/opt/NzbDrone
 export PATH=$PATH:/opt/Radarr
+
 alias r="ranger"
 alias desktop_shorcut="~/.local/share/applications/"
 # Other
@@ -21,3 +22,14 @@ unalias glg
 alias glg='git log --oneline --decorate  --max-count=5'
 export BAT_THEME="GitHub"
 # export BAT_THEME="TwoDark"
+
+# TMUX functions
+# https://www.baeldung.com/linux/bash-alias-with-parameters
+# creates a new window and cd in alias
+function nw() { 
+  tmux new-window && tmux send-keys "$1" 'C-m' && tmux rename-window "$1";
+}
+
+function rw() { 
+  tmux send-keys "$1" 'C-m' && tmux rename-window "$1";
+}

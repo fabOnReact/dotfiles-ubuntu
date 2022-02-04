@@ -30,7 +30,7 @@ set wildmenu
 set wildmode=longest,list,full
 
 " do not show highlighting in search
-set nohlsearch
+" set nohlsearch
 
 " terminal zsh
 " set splitbelow
@@ -43,17 +43,13 @@ nnoremap <silent><S-y> 5<c-y>
 " https://stackoverflow.com/a/9009504/7295772
 " https://unix.stackexchange.com/questions/154845/reverse-global-and-local-marks-in-vi-vim
 nnoremap ma mA
-nnoremap `a `A
 nnoremap 'a 'A
-nnoremap ms ms
-nnoremap `s `s
-nnoremap 's 's
-nnoremap md md
-nnoremap `d `d
-nnoremap 'd 'd
-nnoremap mf mf
-nnoremap `f `f
-nnoremap 'f 'f
+nnoremap ms mS
+nnoremap 's 'S
+nnoremap md mD
+nnoremap 'd 'D
+nnoremap mf mF
+nnoremap 'f 'F
 
 " https://stackoverflow.com/questions/40362460/show-cursor-in-command-line-mode
 set cursorline

@@ -9,10 +9,11 @@ verbose nnoremap <silent><S-k> :bnext<CR>
 " Shortcuts
 nnoremap <silent> <C-p> :GFiles<CR>
 let g:fzf_preview_window = 'right:60%' 
-nmap <Leader>b :Lines<CR>
+nnoremap <silent> <Leader>b :Lines<CR>
 " tag search for current word 
-map <leader>c :Tags <C-r><C-w><cr>
-nnoremap <leader>d :BTags<cr>
+" map <leader>c :Tags <C-r><C-w><cr>
+nnoremap <silent> <leader>b :Tags<cr>
+nnoremap <silent> <leader>r :BTags<cr>
 " Find
 nnoremap <silent><C-f> :Rg<cr>
 
@@ -88,17 +89,7 @@ command! -bang -nargs=* CustomBLines
 nnoremap <leader>s :CustomBLines<Cr>
 
 " https://github.com/junegunn/fzf.vim/issues/800#issuecomment-552224315
-" Add your path here.
-let plugins_dir='/home/fabrizio/.vim/plugged/fzf.vim' 
-let preview_file = plugins_dir . "/fzf.vim/bin/preview.sh"
-command! -bang -nargs=* Tags
-  \ call fzf#vim#tags(<q-args>, {
-  \      'up': '90%',
-  \      'options': '
-  \         --with-nth 1,2
-  \         --preview-window="top:90%"
-  \         --preview ''' . preview_file . ' {2}:$(echo {3} | cut -d ";" -f 1)'''
-  \ }, <bang>0)
+" to set up Tags search
 
 " command to generate tag files
 " let g:fzf_tags_command = 'ctags -R --excmd=number'
