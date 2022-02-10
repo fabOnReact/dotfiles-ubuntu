@@ -40,9 +40,4 @@ source ~/.dotfiles/vim/objc.vim
 source ~/.dotfiles/vim/reactnative.vim
 source ~/.dotfiles/vim/youcompleteme.vim  
 source ~/.dotfiles/vim/explorer.vim  
-
-" Removed
-" source ~/.dotfiles/vim/vim-test.vim
-" source ~/.dotfiles/vim/surfnative.vim
-" source ~/.dotfiles/vim/sneak.vim
-" source ~/.dotfiles/vim/folding.vim
+source ~/.dotfiles/vim/maps.vim  
