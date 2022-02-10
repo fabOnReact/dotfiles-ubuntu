@@ -7,9 +7,11 @@ cnoreabbrev gw Gwrite<CR>
 cnoreabbrev gco G commit<CR>
 cnoreabbrev gd Gvdiff<CR>
 cnoreabbrev va VtrAttachToPane<CR>
-cnoreabbrev gb .GBrowse @notes<CR>
+cnoreabbrev gbn .GBrowse @notes<CR>
 cnoreabbrev gbl G blame<CR>
 cnoreabbrev pg :w<CR> :source %<CR> :PlugInstall<CR>
 cnoreabbrev so :source ./.vimrc<CR>
 cnoreabbrev gdm Gvdiff main<CR>
 cnoreabbrev gdma Gvdiff master<CR>
+cnoreabbrev co copen<CR>
+cnoreabbrev gb .GBrowse<CR>
