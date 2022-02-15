@@ -17,6 +17,14 @@ nnoremap 'f 'F
 " https://vim.fandom.com/wiki/Making_Parenthesis_And_Brackets_Handling_Easier
 inoremap <C-j> <Esc>/[)}"'\]>]<CR>:nohl<CR>a
 
+" replaced by coc-pairs
+" https://github.com/neoclide/coc-pairs
+" https://stackoverflow.com/a/34992101/7295772
+" inoremap " ""<left>
+" inoremap ' ''<left>
+" inoremap ( ()<left>
+" inoremap [ []<left>
+
 " mapping for cn (next result in shortlist)
 nmap <silent><leader>1 :cn<cr>
 
