@@ -14,11 +14,18 @@ set background=light
 
 " fix color issue with neovim
 set t_Co=256
+
+" over-rides highlight color
+" https://vi.stackexchange.com/a/17546
 set termguicolors
 
 " Make clearly distinguable Tabs
 hi TabLineFill ctermfg=LightGreen ctermbg=DarkGreen
 hi TabLine ctermfg=Blue ctermbg=Yellow
+
+" change vim search highlight
+" https://stackoverflow.com/a/7103261/7295772
+hi Search guibg=peru guifg=wheat
 
 " cmdline omnicompletion
 " https://vi.stackexchange.com/questions/11411/is-there-a-version-of-vim-or-plugin-with-a-command-mode-auto-completion
@@ -36,4 +43,4 @@ let g:NERDCreateDefaultMappings = 1
 
 " surrounds mappings to move between brackets
 " https://github.com/alvan/vim-closetag#options
-let g:closetag_filenames = '*.js'
+" let g:closetag_filenames = '*.js'

@@ -96,6 +96,8 @@ Additionally installed the following gnome plugins:
 
 Firefox avoid using same zoom on each website page
 https://support.mozilla.org/en-US/questions/681298
+Move mouse with alt tab
+https://extensions.gnome.org/extension/4673/alt-tab-move-mouse/
 
 TODO
 

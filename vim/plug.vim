@@ -54,7 +54,7 @@ Plug 'christoomey/vim-rfactory'
 Plug 'xolox/vim-misc'
 " https://github.com/alvan/vim-closetag
 " https://youtu.be/NnjkZYKzPds
-Plug 'alvan/vim-closetag'
+" Plug 'alvan/vim-closetag'
 " Plug 'merlinrebrovic/focus.vim'
 " Plug 'justinmk/vim-sneak'
 

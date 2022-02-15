@@ -13,6 +13,11 @@ call glaive#Install()
 
 runtime macros/matchit.vim
 
+" https://vim.fandom.com/wiki/Increasing_or_decreasing_numbers
+" <C>a does not work with number increment so 
+" fix is remapping
+nnoremap <A-a> <C-a>
+
 set number
 set shiftwidth=2
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab

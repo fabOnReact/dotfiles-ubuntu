@@ -1,5 +1,5 @@
 " react native tags
-set tags+=tags,$CODE/reactnative/AwesomeProject/node_modules/react-native,$OS/androidx/appcompat/tags,$OS/platform_frameworks_base/tags
+set tags+=tags,$CODE/reactnative/AwesomeProject/node_modules/react-native,$OS/androidx/tags,$OS/platform_frameworks_base/tags
 
 " commented tags
 " $OS/react-native-fork/tags

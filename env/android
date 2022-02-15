@@ -41,6 +41,7 @@ alias packager="./scripts/packager.sh"
 alias gt='ctags -R --excmd=number'
 alias change_java="sudo update-alternatives --config java"
 alias show_touches="adb shell settings put system show_touches 1"
+alias al="adb logcat"
 
 # os
 alias rntester="./gradlew :RNTester:android:app:installJscDebug"
