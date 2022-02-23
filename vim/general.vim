@@ -21,7 +21,7 @@ set termguicolors
 
 " Make clearly distinguable Tabs
 hi TabLineFill ctermfg=LightGreen ctermbg=DarkGreen
-hi TabLine ctermfg=Blue ctermbg=Yellow
+autocmd vimenter * hi TabLine ctermfg=Blue ctermbg=Yellow
 
 " change vim search highlight
 " https://stackoverflow.com/a/7103261/7295772

@@ -15,5 +15,5 @@ cnoreabbrev gdm Gvdiff main<CR>
 cnoreabbrev gdma Gvdiff master<CR>
 cnoreabbrev co copen<CR>
 cnoreabbrev gb .GBrowse<CR>
-cnoreabbrev gc G commit<CR>
 cnoreabbrev hc hi Search guibg=peru guifg=wheat<CR>
+cnoreabbrev gdbla Gvdiff blavalla/export-D28691177<CR>

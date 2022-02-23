@@ -35,7 +35,6 @@ alias android_emulator_fast='emulator -avd Pixel_3_API_28_4GB_Ram'
 alias haxm_stop='sudo kextunload –b com.intel.kext.intelhaxm'
 alias haxm_start='sudo kextload –b com.intel.kext.intelhaxm'
 alias check_haxm='kextstat | grep intel'
-alias rnand='yarn react-native run-android'
 alias rnip8="yarn react-native run-ios --simulator='iPhone 8'"
 alias rnip11="yarn react-native run-ios --simulator='iPhone 11'"
 alias adbm="adb shell input keyevent 82"
