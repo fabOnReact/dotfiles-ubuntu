@@ -1,3 +1,9 @@
 #!/bin/sh
+
 ## delete all branches except master
 # alias gbr="git branch | grep -v "master" | xargs git branch -D"
+
+# https://www.makeuseof.com/inspect-project-history-git-log/
+# git log --since="2021-01-01" --until="2021-05-01"
+
+alias gs="gst"
