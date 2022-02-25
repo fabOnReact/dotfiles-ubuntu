@@ -75,6 +75,9 @@ c-w o to expand split window
 To find a mapping
 :verbose imap
 
+Replace in all buffers
+bufdo %s/Switch/Text/gce
+
 Fix firefox dpi issue (using dpi at 2.0)
 change firefox.desktop EXEC in /usr/share/applications/
 
