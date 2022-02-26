@@ -33,11 +33,3 @@ function nw() {
 function rw() { 
   tmux send-keys "$1" 'C-m' && tmux rename-window "$1";
 }
-
-function adg() {
-  adb logcat | grep $1
-}
-
-function clg() {
-  ~/.dotfiles/scripts/android/coloredlogcat.py | grep $1
-}

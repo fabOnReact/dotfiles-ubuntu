@@ -45,3 +45,12 @@ alias al="adb logcat"
 
 # os
 alias rntester="./gradlew :RNTester:android:app:installJscDebug"
+
+# functions
+function adg() {
+  adb logcat | grep $1
+}
+
+function clg() {
+  ~/.dotfiles/scripts/android/coloredlogcat.py | grep $1
+}

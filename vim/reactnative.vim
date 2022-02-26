@@ -1,6 +1,6 @@
 " https://stackoverflow.com/a/17391954/11452286
 " run build command
-nnoremap <c-x>b :wa<cr>:VtrSendCtrlC<CR>:VtrSendCommandToRunner buildAndNotify<cr>
+nnoremap <c-x>b :wa<cr>:VtrSendCtrlC<CR>:VtrSendCommandToRunner build<cr>
 
 " nnoremap <c-x>b :wa<cr>:VtrSendCommandToRunner yarn flow<cr>
 
