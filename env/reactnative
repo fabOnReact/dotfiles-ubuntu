@@ -28,6 +28,3 @@ function build() {
     notify-send "gradle_build_failed"
   }
 }
-
-function rn() {
-}

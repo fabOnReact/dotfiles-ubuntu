@@ -35,7 +35,7 @@ function nw() {
 # rename window
 function rw() { 
   echo "---> rename window $1"
-  tmux send-keys "$1" 'C-m' && tmux rename-window "$1"
+  tmux rename-window "$1"
 }
 
 # rename session
@@ -62,10 +62,20 @@ function vm() {
   tmux send-keys 'vim' 'C-m'
 }
 
+# open a new work folder
+function new_project() {
+  echo "---> opening a new project folder $1"
+  rs "a" "projects" &&
+  nw "$1" && rw "$1"
+  vm && 
+  sv && 
+  tmux send-keys "$1" "C-m" &&
+  nw "$1" && rw "git"
+}
+
 # open react native session
 function srn() {
-  echo "---> react native session"
-  rs "a" "reactnative" &&  rw "reactnative" && vm && sv
+  new_project "reactnative"
 }
 
 # open metro service
