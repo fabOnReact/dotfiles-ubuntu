@@ -3,8 +3,6 @@ cp /home/fabrizio/.dotfiles/scripts/android/adbm /usr/bin/adbm
 cp /home/fabrizio/.dotfiles/scripts/android/surf_android /usr/bin/surf_android
 chown fabrizio:fabrizio /usr/bin/adbm
 chmod +x /usr/bin/adbm
-cp /home/fabrizio/.dotfiles/scripts/android/adbgrep /usr/bin/adbgrep
-chmod +x /usr/bin/adbgrep
 cp /home/fabrizio/.dotfiles/scripts/android/adberror /usr/bin/adberror
 chmod +x /usr/bin/adberror
 cp /home/fabrizio/.dotfiles/scripts/android/adbwarning /usr/bin/adbwarning
