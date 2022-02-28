@@ -101,16 +101,3 @@ Firefox avoid using same zoom on each website page
 https://support.mozilla.org/en-US/questions/681298
 Move mouse with alt tab
 https://extensions.gnome.org/extension/4673/alt-tab-move-mouse/
-
-TODO
-
-Scripts:
-1) Script to automatically start a server at location (alias) in the services session
-
-Focused Windows on Ubuntu https://extensions.gnome.org/extension/3924/focus/
-
-- configure markers to not be deleted when deleting the line
-- fix java tags so that imports (f9 for FLog works). You need to update the tag variable and research best way to import tags from other projects (AOSP) so that you don't navigate to the wrong reference
-- use g instead of git
-- use autocomplete tab
-- per project init.vim settings

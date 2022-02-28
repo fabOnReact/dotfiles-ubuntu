@@ -1,0 +1,11 @@
+TODO
+
+Scripts:
+
+1) Firefox does not work as default application https://askubuntu.com/a/347282
+2) per folder history
+3) Script to automatically start a server at location (alias) in the services session
+4) fix java tags so that imports (f9 for FLog works). You need to update the tag variable and research best way to import tags from other projects (AOSP) so that you don't navigate to the wrong reference
+- use g instead of git
+- use autocomplete tab
+- per project init.vim settings
