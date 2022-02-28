@@ -8,7 +8,7 @@ tmux send-keys 'vim ~/.zshrc' 'C-m'
 tmux rename-window ".ZSH"
 
 # open a split
-tmux split-window -l 20
+tmux split-window -l 4
 tmux send-keys 'cd ~/.dotfiles' 'C-m'
 
 # scripts
