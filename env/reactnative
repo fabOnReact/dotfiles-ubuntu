@@ -1,5 +1,6 @@
 #!/bin/sh
-alias ysr="./scripts/packager.sh"
+# alias ysr="./scripts/packager.sh"
+alias rnserver="$CODE/opensource/react-native/scripts/packager.sh"
 alias bta="./scripts/run-android-local-unit-tests.sh"
 alias btf="buck test ReactAndroid/src/test/java/com/facebook/react/views:views --test-selectors 'com.facebook.react.views.image.ReactImagePropertyTest#testRoundedCorners'"
 alias ybr="./gradlew :packages:rn-tester:android:app:installJscDebug -PreactNativeArchitectures=x86"
@@ -26,4 +27,7 @@ function build() {
   } || { # catch
     notify-send "gradle_build_failed"
   }
+}
+
+function rn() {
 }

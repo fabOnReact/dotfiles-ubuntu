@@ -25,11 +25,61 @@ export BAT_THEME="GitHub"
 
 # TMUX functions
 # https://www.baeldung.com/linux/bash-alias-with-parameters
+
 # creates a new window and cd in alias
 function nw() { 
+  echo "---> new window $1"
   tmux new-window && tmux send-keys "$1" 'C-m' && tmux rename-window "$1";
 }
 
+# rename window
 function rw() { 
-  tmux send-keys "$1" 'C-m' && tmux rename-window "$1";
+  echo "---> rename window $1"
+  tmux send-keys "$1" 'C-m' && tmux rename-window "$1"
+}
+
+# rename session
+function rs() {
+  echo "---> rename session $1 - $2"
+  tmux rename-session "$1 - $2"
+}
+
+# open a split horizontal
+function sh() {
+  echo "---> open horizontal split"
+  tmux split-window -l 4
+}
+
+# open a split vertical
+function sv() {
+  echo "---> open vertical split"
+  tmux split-window -h 
+}
+
+# open vim
+function vm() {
+  echo "---> open vim"
+  tmux send-keys 'vim' 'C-m'
+}
+
+# open react native session
+function srn() {
+  echo "---> react native session"
+  rs "a" "reactnative" &&  rw "reactnative" && vm && sv
+}
+
+# open metro service
+# does not work https://unix.stackexchange.com/questions/305039/pausing-a-bash-script-until-previous-commands-are-finished
+# https://stackoverflow.com/questions/2398388/is-it-possible-for-bash-commands-to-continue-before-the-result-of-the-previous-c
+# https://phoenixnap.com/kb/bash-wait-command
+function service() {
+  echo "---> start service $1"
+  rs "s" "services" &&
+  rw $1 &&
+  tmux send-keys $1 "C-m"
+}
+
+function metro() {
+  echo "---> start metro service for reactnative build from source"
+  service "rnserver"
 }
