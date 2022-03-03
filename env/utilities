@@ -70,12 +70,8 @@ function new_project() {
   vm && 
   sv && 
   tmux send-keys "$1" "C-m" &&
-  nw "$1" && rw "git"
-}
-
-# open react native session
-function srn() {
-  new_project "reactnative"
+  # nw "$1" && rw "git" &&
+  tmux kill-window -t "zsh"
 }
 
 # open metro service
@@ -87,9 +83,4 @@ function service() {
   rs "s" "services" &&
   rw $1 &&
   tmux send-keys $1 "C-m"
-}
-
-function metro() {
-  echo "---> start metro service for reactnative build from source"
-  service "rnserver"
 }

@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "---> new-window -n zsh"
+tmux new-window -n zsh
+echo "---> start metro service for reactnative build from source"
+tmux send-keys "service rnserver" "C-m"

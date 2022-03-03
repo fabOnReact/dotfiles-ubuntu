@@ -1,11 +1,5 @@
 #!/bin/sh
 echo "---> new-window -n zsh"
 tmux new-window -n zsh
-echo "---> tmux send-keys folder_rn C-m"
-tmux send-keys "folder_rn" "C-m"
-echo "---> new"
-tmux new 
-echo "---> new-window -n zsh"
-tmux new-window -n zsh
-echo "---> tmux metro C-m"
-tmux send-keys "metro" "C-m"
+echo "---> tmux send-keys new_project reactnative C-m"
+tmux send-keys "new_project reactnative" "C-m"
