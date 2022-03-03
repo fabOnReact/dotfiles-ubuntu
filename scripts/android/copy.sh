@@ -1,6 +1,5 @@
 #!/bin/sh
 cp /home/fabrizio/.dotfiles/scripts/android/adbm /usr/bin/adbm
-cp /home/fabrizio/.dotfiles/scripts/android/surf_android /usr/bin/surf_android
 chown fabrizio:fabrizio /usr/bin/adbm
 chmod +x /usr/bin/adbm
 cp /home/fabrizio/.dotfiles/scripts/android/adberror /usr/bin/adberror
