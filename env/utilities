@@ -63,6 +63,8 @@ function vm() {
 }
 
 # open a new work folder
+# open reactnative session
+# new_project reactnative
 function new_project() {
   echo "---> opening a new project folder $1"
   rs "a" "projects" &&
@@ -74,7 +76,27 @@ function new_project() {
   tmux kill-window -t "zsh"
 }
 
+function np() {
+  new_project $1
+}
+
+# automatically build the project
+# function build() {
+#   echo "build called with parameter $1"
+#   if ($1 == "reactnative") {
+#   }
+# }
+
+# create new_window
+# rename it to git
+function ng() {
+  tmux new-window 
+  tmux rename-window "git"
+  tmux send-keys "glg" "C-m"
+}
+
 # open metro service
+# service metro
 # does not work https://unix.stackexchange.com/questions/305039/pausing-a-bash-script-until-previous-commands-are-finished
 # https://stackoverflow.com/questions/2398388/is-it-possible-for-bash-commands-to-continue-before-the-result-of-the-previous-c
 # https://phoenixnap.com/kb/bash-wait-command
