@@ -87,4 +87,8 @@ Plug 'ap/vim-buftabline'
 " Plug 'kyazdani42/nvim-web-devicons'
 
 " https://github.com/preservim/nerdcommenter
-Plug 'preservim/nerdcommenter'
+" Plug 'preservim/nerdcommenter'
+" https://github.com/vim-syntastic/syntastic#installation
+" Plug 'vim-syntastic/syntastic'
+" https://github.com/keith/swift.vim#usage
+" Plug 'keith/swift.vim'
