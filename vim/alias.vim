@@ -13,7 +13,6 @@ cnoreabbrev gbu .GBrowse @upstream<CR>
 cnoreabbrev gbn .GBrowse @notes<CR>
 cnoreabbrev gbl G blame<CR>
 cnoreabbrev pg :w<CR> :source %<CR> :PlugInstall<CR>
-" cnoreabbrev so :source ./.vimrc<CR>
 cnoreabbrev gdm Gvdiff main<CR>
 cnoreabbrev gdma Gvdiff master<CR>
 cnoreabbrev co copen<CR>
