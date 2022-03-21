@@ -48,7 +48,7 @@ alias rntester="./gradlew :RNTester:android:app:installJscDebug"
 
 # functions
 function adg() {
-  adb logcat | grep $1
+  adb logcat G "$1"
 }
 
 function clg() {

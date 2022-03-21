@@ -29,7 +29,10 @@ export BAT_THEME="GitHub"
 # creates a new window and cd in alias
 function nw() { 
   echo "---> new window $1"
-  tmux new-window && tmux send-keys "$1" 'C-m' && tmux rename-window "$1";
+  tmux new-window
+  tmux send-keys "$1" 'C-m'
+  tmux rename-window "$1"
+  tmux send-keys "vim" 'C-m'
 }
 
 # rename window
