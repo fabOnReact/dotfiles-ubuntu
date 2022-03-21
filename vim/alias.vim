@@ -12,6 +12,7 @@ cnoreabbrev gb .GBrowse<CR>
 cnoreabbrev gbu .GBrowse @upstream<CR>
 cnoreabbrev gbn .GBrowse @notes<CR>
 cnoreabbrev gbl G blame<CR>
+cnoreabbrev gvf GV --author=fabriziobertoglio1987<CR>
 cnoreabbrev pg :w<CR> :source %<CR> :PlugInstall<CR>
 cnoreabbrev gdm Gvdiff main<CR>
 cnoreabbrev gdma Gvdiff master<CR>
