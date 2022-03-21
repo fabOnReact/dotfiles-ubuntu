@@ -73,7 +73,7 @@ function new_project() {
   rs "a" "projects" &&
   nw "$1" && rw "$1"
   vm && 
-  sv && 
+  sh && 
   tmux send-keys "$1" "C-m" &&
   # nw "$1" && rw "git" &&
   tmux kill-window -t "zsh"
