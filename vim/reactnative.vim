@@ -3,7 +3,7 @@
 nnoremap <c-x>b :wa<cr>:VtrSendCtrlC<CR>:VtrSendCommandToRunner build<cr>
 
 " run android build command
-nnoremap <c-x>b :wa<cr>:VtrSendCtrlC<CR>:VtrSendCommandToRunner rnand<cr>
+" nnoremap <c-x>b :wa<cr>:VtrSendCtrlC<CR>:VtrSendCommandToRunner rnand<cr>
 
 " nnoremap <c-x>b :wa<cr>:VtrSendCommandToRunner yarn flow<cr>
 
