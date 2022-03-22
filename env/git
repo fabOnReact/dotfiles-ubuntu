@@ -7,3 +7,4 @@
 # git log --since="2021-01-01" --until="2021-05-01"
 
 alias gs="gst"
+alias glnotme="glo --author='^(?!fabriziobertoglio1987).*$' --perl-regexp"
