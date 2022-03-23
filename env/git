@@ -7,4 +7,11 @@
 # git log --since="2021-01-01" --until="2021-05-01"
 
 alias gs="gst"
+
+# filter commits that are not mine
+# https://stackoverflow.com/a/4262780/7295772
 alias glnotme="glo --author='^(?!fabriziobertoglio1987).*$' --perl-regexp"
+
+function glco() {
+  glg $1 --max-count=$2
+}
