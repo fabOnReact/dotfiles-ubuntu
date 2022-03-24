@@ -23,7 +23,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 function build() {
   { # try
     ybr && notify-send "gradle_build_completed" && ysa
-    #save your output
   } || { # catch
     notify-send "gradle_build_failed"
   }
