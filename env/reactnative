@@ -14,6 +14,10 @@ alias aon="adb shell settings put secure enabled_accessibility_services com.goog
 alias cocrn="echo 'y' | cp ~/.dotfiles/files/config_js.json ~/.config/nvim/coc-settings.json"
 alias aw="cd /home/fabrizio/Documents/sourcecode/reactnative/AwesomeProject"
 
+# ctags
+alias ctags_java="ctags --languages=java -R ."
+alias ctags_cpp="ctags -R --c++-kinds=+pf --fields=+imaSft --extra=+q --languages=cpp ."
+
 # https://github.com/CommE2E/comm/blob/master/docs/dev_environment.md#nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
