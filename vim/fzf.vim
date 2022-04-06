@@ -9,10 +9,10 @@ verbose nnoremap <silent><S-k> :bnext<CR>
 " Shortcuts
 nnoremap <silent> <C-p> :GFiles<CR>
 let g:fzf_preview_window = 'right:60%' 
-nnoremap <silent> <Leader>b :Lines<CR>
+nnoremap <silent> <Leader>b :Buffers<CR>
 " tag search for current word 
 " map <leader>c :Tags <C-r><C-w><cr>
-nnoremap <silent> <leader>b :Tags<cr>
+" nnoremap <silent> <leader>b :Tags<cr>
 nnoremap <silent> <leader>r :BTags<cr>
 " Find
 nnoremap <silent><C-f> :Rg<cr>

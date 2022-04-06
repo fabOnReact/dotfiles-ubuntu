@@ -11,7 +11,18 @@ alias gs="gst"
 # filter commits that are not mine
 # https://stackoverflow.com/a/4262780/7295772
 alias glnotme="glo --author='^(?!fabriziobertoglio1987).*$' --perl-regexp"
+alias glme="glg --author=fabriziobertoglio1987"
+alias glm="glco 10"
+alias gitclean="git clean -fdx"
 
 function glco() {
-  glg $1 --max-count=$2
+  glme $2 --max-count=$1
+}
+
+function gours() {
+  git checkout --ours $1
+}
+
+function gtheirs() {
+  git checkout --theirs $1
 }
