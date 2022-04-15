@@ -29,12 +29,13 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # build rn-tester
 function build() {
   { # try
-    ybr && notify-send "gradle_build_completed" && ysa
+    buildShortLog && notify-send "gradle_build_completed" && ysa
   } || { # catch
     notify-send "gradle_build_failed"
   }
 }
 
-function buildGrepErrors() {
-  build G "Build failed"
+function buildShortLog() {
+  # build G "FAILED"
+  ybr -q
 }
